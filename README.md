@@ -30,5 +30,5 @@ The modules developed within this Zero Trust IoT library for ns-3 work in close 
 5. Run the examples:
 
    ```bash
-   ./ns3 run 
+   ./ns3 run spoofing/spoofing-attack.cc
    ```
