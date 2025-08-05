@@ -27,8 +27,4 @@ The modules developed within this Zero Trust IoT library for ns-3 work in close 
     ```bash
     ./ns3 build
     ```
-5. Run the examples:
-
-   ```bash
-   ./ns3 run spoofing/spoofing-attack.cc
-   ```
+5. Run the examples by copying it to the scratch folder.
