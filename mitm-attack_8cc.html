@@ -1,0 +1,494 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Zero Trust IoT library: examples/mitm/mitm-attack.cc File Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/the-ns3-programmer/zero-trust-iot" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="zero-trust-iot.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zero Trust IoT library
+   </div>
+<div style="position: fixed; top: 1rem; right: 4rem; z-index: 1000; background-color: #eee; padding: 0.5rem; border-radius: 5px; cursor: pointer;">
+  <doxygen-awesome-dark-mode-toggle title="Toggle Light/Dark Mode" id="theme-toggle"></doxygen-awesome-dark-mode-toggle>
+</div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Force re-render of the component after load
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      // Trigger internal update by toggling the mode briefly
+      setTimeout(() => {
+        toggle.dispatchEvent(new Event('click'));
+        toggle.dispatchEvent(new Event('click'));
+      }, 10);
+    }
+  });
+</script>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('mitm-attack_8cc.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
+  <div class="headertitle"><div class="title">mitm-attack.cc File Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>NS-3 simulation of a Man-in-the-Middle (MitM) attack on UDP communication.  
+<a href="#details">More...</a></p>
+<div class="textblock"><code>#include &quot;ns3/core-module.h&quot;</code><br />
+<code>#include &quot;ns3/network-module.h&quot;</code><br />
+<code>#include &quot;ns3/internet-module.h&quot;</code><br />
+<code>#include &quot;ns3/point-to-point-module.h&quot;</code><br />
+<code>#include &quot;ns3/applications-module.h&quot;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Include dependency graph for mitm-attack.cc:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="mitm-attack_8cc__incl.svg" width="100%" height="404"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+</div>
+<p><a href="mitm-attack_8cc_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a31a4e1db113301f6869b30c13dadf661" id="r_a31a4e1db113301f6869b30c13dadf661"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mitm-attack_8cc.html#a31a4e1db113301f6869b30c13dadf661">NS_LOG_COMPONENT_DEFINE</a> (&quot;MitMAttackUDP&quot;)</td></tr>
+<tr class="separator:a31a4e1db113301f6869b30c13dadf661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae80caccc8855688279c1a87987a9c267" id="r_ae80caccc8855688279c1a87987a9c267"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mitm-attack_8cc.html#ae80caccc8855688279c1a87987a9c267">SendFromSensor</a> (Ptr&lt; Socket &gt; socket, Address mitmAddr, std::string message)</td></tr>
+<tr class="memdesc:ae80caccc8855688279c1a87987a9c267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends a UDP message from the sensor node to the MITM node.  <br /></td></tr>
+<tr class="separator:ae80caccc8855688279c1a87987a9c267"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6898e3febd567849e1a7310597beb21f" id="r_a6898e3febd567849e1a7310597beb21f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mitm-attack_8cc.html#a6898e3febd567849e1a7310597beb21f">ReceiveAtGateway</a> (Ptr&lt; Socket &gt; socket)</td></tr>
+<tr class="memdesc:a6898e3febd567849e1a7310597beb21f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Receives packets at the gateway node.  <br /></td></tr>
+<tr class="separator:a6898e3febd567849e1a7310597beb21f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d3153c36501901f35611c7faac2c56e" id="r_a2d3153c36501901f35611c7faac2c56e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mitm-attack_8cc.html#a2d3153c36501901f35611c7faac2c56e">MitmReceiveAndForward</a> (Ptr&lt; Socket &gt; socket)</td></tr>
+<tr class="memdesc:a2d3153c36501901f35611c7faac2c56e"><td class="mdescLeft">&#160;</td><td class="mdescRight">MITM node intercepts and modifies packets before forwarding them to the gateway.  <br /></td></tr>
+<tr class="separator:a2d3153c36501901f35611c7faac2c56e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mitm-attack_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
+<tr class="memdesc:a0ddf1224851353fc92bfbff6f499fa97"><td class="mdescLeft">&#160;</td><td class="mdescRight">Main function to set up the NS-3 simulation.  <br /></td></tr>
+<tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:a3326e61d0c24de7f9e42b4bb96e5be7e" id="r_a3326e61d0c24de7f9e42b4bb96e5be7e"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mitm-attack_8cc.html#a3326e61d0c24de7f9e42b4bb96e5be7e">mitmPort</a> = 8080</td></tr>
+<tr class="separator:a3326e61d0c24de7f9e42b4bb96e5be7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aae6750e209d2db65f6041f86d7b46fd7" id="r_aae6750e209d2db65f6041f86d7b46fd7"><td class="memItemLeft" align="right" valign="top">uint16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mitm-attack_8cc.html#aae6750e209d2db65f6041f86d7b46fd7">gatewayPort</a> = 9090</td></tr>
+<tr class="separator:aae6750e209d2db65f6041f86d7b46fd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a870231762e4c5770542e792c0f253698" id="r_a870231762e4c5770542e792c0f253698"><td class="memItemLeft" align="right" valign="top">Ipv4Address&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="mitm-attack_8cc.html#a870231762e4c5770542e792c0f253698">g_gatewayAddress</a></td></tr>
+<tr class="separator:a870231762e4c5770542e792c0f253698"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>NS-3 simulation of a Man-in-the-Middle (MitM) attack on UDP communication. </p>
+
+<p class="definition">Definition in file <a class="el" href="mitm-attack_8cc_source.html">mitm-attack.cc</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ddf1224851353fc92bfbff6f499fa97">&#9670;&#160;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>argc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>argv</em>[]&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Main function to set up the NS-3 simulation. </p>
+<p>Creates three nodes (sensor, MITM, gateway), connects them with point-to-point links, installs the internet stack, sets up sockets and callbacks, and runs the simulation. </p>
+
+<p class="definition">Definition at line <a class="el" href="mitm-attack_8cc_source.html#l00072">72</a> of file <a class="el" href="mitm-attack_8cc_source.html">mitm-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   72</span>                                 {</div>
+<div class="line"><span class="lineno">   73</span>  LogComponentEnable(<span class="stringliteral">&quot;MitMAttackUDP&quot;</span>, LOG_LEVEL_INFO);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>  NodeContainer nodes;</div>
+<div class="line"><span class="lineno">   76</span>  nodes.Create(3); <span class="comment">// 0: Sensor, 1: Gateway, 2: MITM</span></div>
+<div class="line"><span class="lineno">   77</span> </div>
+<div class="line"><span class="lineno">   78</span>  PointToPointHelper p2p;</div>
+<div class="line"><span class="lineno">   79</span>  p2p.SetDeviceAttribute(<span class="stringliteral">&quot;DataRate&quot;</span>, StringValue(<span class="stringliteral">&quot;5Mbps&quot;</span>));</div>
+<div class="line"><span class="lineno">   80</span>  p2p.SetChannelAttribute(<span class="stringliteral">&quot;Delay&quot;</span>, StringValue(<span class="stringliteral">&quot;2ms&quot;</span>));</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>  NetDeviceContainer d1 = p2p.Install(nodes.Get(0), nodes.Get(2)); <span class="comment">// Sensor-MITM</span></div>
+<div class="line"><span class="lineno">   83</span>  NetDeviceContainer d2 = p2p.Install(nodes.Get(2), nodes.Get(1)); <span class="comment">// MITM-Gateway</span></div>
+<div class="line"><span class="lineno">   84</span> </div>
+<div class="line"><span class="lineno">   85</span>  InternetStackHelper stack;</div>
+<div class="line"><span class="lineno">   86</span>  stack.Install(nodes);</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>  Ipv4AddressHelper ip;</div>
+<div class="line"><span class="lineno">   89</span>  ip.SetBase(<span class="stringliteral">&quot;10.1.1.0&quot;</span>, <span class="stringliteral">&quot;255.255.255.0&quot;</span>);</div>
+<div class="line"><span class="lineno">   90</span>  Ipv4InterfaceContainer i1 = ip.Assign(d1);</div>
+<div class="line"><span class="lineno">   91</span>  ip.SetBase(<span class="stringliteral">&quot;10.1.2.0&quot;</span>, <span class="stringliteral">&quot;255.255.255.0&quot;</span>);</div>
+<div class="line"><span class="lineno">   92</span>  Ipv4InterfaceContainer i2 = ip.Assign(d2);</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>  Ipv4GlobalRoutingHelper::PopulateRoutingTables();</div>
+<div class="line"><span class="lineno">   95</span> </div>
+<div class="line"><span class="lineno">   96</span>  <span class="comment">// Gateway socket</span></div>
+<div class="line"><span class="lineno">   97</span>  Ptr&lt;Socket&gt; gatewaySock = Socket::CreateSocket(nodes.Get(1), UdpSocketFactory::GetTypeId());</div>
+<div class="line"><span class="lineno">   98</span>  gatewaySock-&gt;Bind(InetSocketAddress(Ipv4Address::GetAny(), <a class="code hl_variable" href="mitm-attack_8cc.html#aae6750e209d2db65f6041f86d7b46fd7">gatewayPort</a>));</div>
+<div class="line"><span class="lineno">   99</span>  gatewaySock-&gt;SetRecvCallback(MakeCallback(&amp;<a class="code hl_function" href="mitm-attack_8cc.html#a6898e3febd567849e1a7310597beb21f">ReceiveAtGateway</a>));</div>
+<div class="line"><span class="lineno">  100</span> </div>
+<div class="line"><span class="lineno">  101</span>  <span class="comment">// MITM socket</span></div>
+<div class="line"><span class="lineno">  102</span>  Ptr&lt;Socket&gt; mitmSock = Socket::CreateSocket(nodes.Get(2), UdpSocketFactory::GetTypeId());</div>
+<div class="line"><span class="lineno">  103</span>  mitmSock-&gt;Bind(InetSocketAddress(Ipv4Address::GetAny(), <a class="code hl_variable" href="mitm-attack_8cc.html#a3326e61d0c24de7f9e42b4bb96e5be7e">mitmPort</a>));</div>
+<div class="line"><span class="lineno">  104</span>  mitmSock-&gt;SetRecvCallback(MakeCallback(&amp;<a class="code hl_function" href="mitm-attack_8cc.html#a2d3153c36501901f35611c7faac2c56e">MitmReceiveAndForward</a>));</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>  <span class="comment">// Sensor socket</span></div>
+<div class="line"><span class="lineno">  107</span>  Ptr&lt;Socket&gt; sensorSock = Socket::CreateSocket(nodes.Get(0), UdpSocketFactory::GetTypeId());</div>
+<div class="line"><span class="lineno">  108</span>  Simulator::Schedule(Seconds(2.0), &amp;<a class="code hl_function" href="mitm-attack_8cc.html#ae80caccc8855688279c1a87987a9c267">SendFromSensor</a>, sensorSock, InetSocketAddress(i1.GetAddress(1), <a class="code hl_variable" href="mitm-attack_8cc.html#a3326e61d0c24de7f9e42b4bb96e5be7e">mitmPort</a>), <span class="stringliteral">&quot;TEMP:45.2&quot;</span>);</div>
+<div class="line"><span class="lineno">  109</span>  <a class="code hl_variable" href="mitm-attack_8cc.html#a870231762e4c5770542e792c0f253698">g_gatewayAddress</a> = i2.GetAddress(1);  <span class="comment">// Set the global gateway address</span></div>
+<div class="line"><span class="lineno">  110</span> </div>
+<div class="line"><span class="lineno">  111</span>  Simulator::Run();</div>
+<div class="line"><span class="lineno">  112</span>  Simulator::Destroy();</div>
+<div class="line"><span class="lineno">  113</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  114</span>}</div>
+<div class="ttc" id="amitm-attack_8cc_html_a2d3153c36501901f35611c7faac2c56e"><div class="ttname"><a href="mitm-attack_8cc.html#a2d3153c36501901f35611c7faac2c56e">MitmReceiveAndForward</a></div><div class="ttdeci">void MitmReceiveAndForward(Ptr&lt; Socket &gt; socket)</div><div class="ttdoc">MITM node intercepts and modifies packets before forwarding them to the gateway.</div><div class="ttdef"><b>Definition</b> <a href="mitm-attack_8cc_source.html#l00050">mitm-attack.cc:50</a></div></div>
+<div class="ttc" id="amitm-attack_8cc_html_a3326e61d0c24de7f9e42b4bb96e5be7e"><div class="ttname"><a href="mitm-attack_8cc.html#a3326e61d0c24de7f9e42b4bb96e5be7e">mitmPort</a></div><div class="ttdeci">uint16_t mitmPort</div><div class="ttdef"><b>Definition</b> <a href="mitm-attack_8cc_source.html#l00016">mitm-attack.cc:16</a></div></div>
+<div class="ttc" id="amitm-attack_8cc_html_a6898e3febd567849e1a7310597beb21f"><div class="ttname"><a href="mitm-attack_8cc.html#a6898e3febd567849e1a7310597beb21f">ReceiveAtGateway</a></div><div class="ttdeci">void ReceiveAtGateway(Ptr&lt; Socket &gt; socket)</div><div class="ttdoc">Receives packets at the gateway node.</div><div class="ttdef"><b>Definition</b> <a href="mitm-attack_8cc_source.html#l00037">mitm-attack.cc:37</a></div></div>
+<div class="ttc" id="amitm-attack_8cc_html_a870231762e4c5770542e792c0f253698"><div class="ttname"><a href="mitm-attack_8cc.html#a870231762e4c5770542e792c0f253698">g_gatewayAddress</a></div><div class="ttdeci">Ipv4Address g_gatewayAddress</div><div class="ttdef"><b>Definition</b> <a href="mitm-attack_8cc_source.html#l00018">mitm-attack.cc:18</a></div></div>
+<div class="ttc" id="amitm-attack_8cc_html_aae6750e209d2db65f6041f86d7b46fd7"><div class="ttname"><a href="mitm-attack_8cc.html#aae6750e209d2db65f6041f86d7b46fd7">gatewayPort</a></div><div class="ttdeci">uint16_t gatewayPort</div><div class="ttdef"><b>Definition</b> <a href="mitm-attack_8cc_source.html#l00017">mitm-attack.cc:17</a></div></div>
+<div class="ttc" id="amitm-attack_8cc_html_ae80caccc8855688279c1a87987a9c267"><div class="ttname"><a href="mitm-attack_8cc.html#ae80caccc8855688279c1a87987a9c267">SendFromSensor</a></div><div class="ttdeci">void SendFromSensor(Ptr&lt; Socket &gt; socket, Address mitmAddr, std::string message)</div><div class="ttdoc">Sends a UDP message from the sensor node to the MITM node.</div><div class="ttdef"><b>Definition</b> <a href="mitm-attack_8cc_source.html#l00026">mitm-attack.cc:26</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="mitm-attack_8cc_a0ddf1224851353fc92bfbff6f499fa97_cgraph.svg" width="299" height="135"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a2d3153c36501901f35611c7faac2c56e" name="a2d3153c36501901f35611c7faac2c56e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d3153c36501901f35611c7faac2c56e">&#9670;&#160;</a></span>MitmReceiveAndForward()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MitmReceiveAndForward </td>
+          <td>(</td>
+          <td class="paramtype">Ptr&lt; Socket &gt;&#160;</td>
+          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>MITM node intercepts and modifies packets before forwarding them to the gateway. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>The receiving socket on the MITM node. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="mitm-attack_8cc_source.html#l00050">50</a> of file <a class="el" href="mitm-attack_8cc_source.html">mitm-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   50</span>                                               {</div>
+<div class="line"><span class="lineno">   51</span>  Ptr&lt;Packet&gt; pkt = socket-&gt;Recv();</div>
+<div class="line"><span class="lineno">   52</span>  uint32_t size = pkt-&gt;GetSize();</div>
+<div class="line"><span class="lineno">   53</span>  std::vector&lt;uint8_t&gt; buffer(size);</div>
+<div class="line"><span class="lineno">   54</span>  pkt-&gt;CopyData(buffer.data(), size);</div>
+<div class="line"><span class="lineno">   55</span>  std::string msg(buffer.begin(), buffer.end());</div>
+<div class="line"><span class="lineno">   56</span> </div>
+<div class="line"><span class="lineno">   57</span>  std::string tampered = <span class="stringliteral">&quot;TAMPERED: &quot;</span> + msg;</div>
+<div class="line"><span class="lineno">   58</span>  NS_LOG_UNCOND(<span class="stringliteral">&quot;[MITM] Intercepted and modified: &quot;</span> &lt;&lt; tampered);</div>
+<div class="line"><span class="lineno">   59</span> </div>
+<div class="line"><span class="lineno">   60</span>  Ptr&lt;Socket&gt; forwardSocket = Socket::CreateSocket(socket-&gt;GetNode(), UdpSocketFactory::GetTypeId());</div>
+<div class="line"><span class="lineno">   61</span>  forwardSocket-&gt;Connect(InetSocketAddress(<a class="code hl_variable" href="mitm-attack_8cc.html#a870231762e4c5770542e792c0f253698">g_gatewayAddress</a>, <a class="code hl_variable" href="mitm-attack_8cc.html#aae6750e209d2db65f6041f86d7b46fd7">gatewayPort</a>));</div>
+<div class="line"><span class="lineno">   62</span>  Ptr&lt;Packet&gt; fwdPkt = Create&lt;Packet&gt;((uint8_t*)tampered.c_str(), tampered.size());</div>
+<div class="line"><span class="lineno">   63</span>  forwardSocket-&gt;Send(fwdPkt);</div>
+<div class="line"><span class="lineno">   64</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="mitm-attack_8cc_a2d3153c36501901f35611c7faac2c56e_icgraph.svg" width="299" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a31a4e1db113301f6869b30c13dadf661" name="a31a4e1db113301f6869b30c13dadf661"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a31a4e1db113301f6869b30c13dadf661">&#9670;&#160;</a></span>NS_LOG_COMPONENT_DEFINE()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">NS_LOG_COMPONENT_DEFINE </td>
+          <td>(</td>
+          <td class="paramtype">&quot;MitMAttackUDP&quot;&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+</div>
+</div>
+<a id="a6898e3febd567849e1a7310597beb21f" name="a6898e3febd567849e1a7310597beb21f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6898e3febd567849e1a7310597beb21f">&#9670;&#160;</a></span>ReceiveAtGateway()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ReceiveAtGateway </td>
+          <td>(</td>
+          <td class="paramtype">Ptr&lt; Socket &gt;&#160;</td>
+          <td class="paramname"><em>socket</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Receives packets at the gateway node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>The receiving socket. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="mitm-attack_8cc_source.html#l00037">37</a> of file <a class="el" href="mitm-attack_8cc_source.html">mitm-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   37</span>                                          {</div>
+<div class="line"><span class="lineno">   38</span>  Ptr&lt;Packet&gt; pkt = socket-&gt;Recv();</div>
+<div class="line"><span class="lineno">   39</span>  uint32_t size = pkt-&gt;GetSize();</div>
+<div class="line"><span class="lineno">   40</span>  std::vector&lt;uint8_t&gt; buffer(size);</div>
+<div class="line"><span class="lineno">   41</span>  pkt-&gt;CopyData(buffer.data(), size);</div>
+<div class="line"><span class="lineno">   42</span>  std::string msg(buffer.begin(), buffer.end());</div>
+<div class="line"><span class="lineno">   43</span>  NS_LOG_UNCOND(<span class="stringliteral">&quot;[GATEWAY] Received: &quot;</span> &lt;&lt; msg);</div>
+<div class="line"><span class="lineno">   44</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="mitm-attack_8cc_a6898e3febd567849e1a7310597beb21f_icgraph.svg" width="260" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="ae80caccc8855688279c1a87987a9c267" name="ae80caccc8855688279c1a87987a9c267"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae80caccc8855688279c1a87987a9c267">&#9670;&#160;</a></span>SendFromSensor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SendFromSensor </td>
+          <td>(</td>
+          <td class="paramtype">Ptr&lt; Socket &gt;&#160;</td>
+          <td class="paramname"><em>socket</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Address&#160;</td>
+          <td class="paramname"><em>mitmAddr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">std::string&#160;</td>
+          <td class="paramname"><em>message</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sends a UDP message from the sensor node to the MITM node. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>The socket used for transmission. </td></tr>
+    <tr><td class="paramname">mitmAddr</td><td>The address of the MITM node. </td></tr>
+    <tr><td class="paramname">message</td><td>The message string to send. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="mitm-attack_8cc_source.html#l00026">26</a> of file <a class="el" href="mitm-attack_8cc_source.html">mitm-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                                                                             {</div>
+<div class="line"><span class="lineno">   27</span>  socket-&gt;Connect(mitmAddr);</div>
+<div class="line"><span class="lineno">   28</span>  Ptr&lt;Packet&gt; pkt = Create&lt;Packet&gt;((uint8_t*)message.c_str(), message.size());</div>
+<div class="line"><span class="lineno">   29</span>  socket-&gt;Send(pkt);</div>
+<div class="line"><span class="lineno">   30</span>  NS_LOG_UNCOND(<span class="stringliteral">&quot;[SENSOR] Sent: &quot;</span> &lt;&lt; message);</div>
+<div class="line"><span class="lineno">   31</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="mitm-attack_8cc_ae80caccc8855688279c1a87987a9c267_icgraph.svg" width="244" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="a870231762e4c5770542e792c0f253698" name="a870231762e4c5770542e792c0f253698"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a870231762e4c5770542e792c0f253698">&#9670;&#160;</a></span>g_gatewayAddress</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ipv4Address g_gatewayAddress</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mitm-attack_8cc_source.html#l00018">18</a> of file <a class="el" href="mitm-attack_8cc_source.html">mitm-attack.cc</a>.</p>
+
+</div>
+</div>
+<a id="aae6750e209d2db65f6041f86d7b46fd7" name="aae6750e209d2db65f6041f86d7b46fd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aae6750e209d2db65f6041f86d7b46fd7">&#9670;&#160;</a></span>gatewayPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t gatewayPort = 9090</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mitm-attack_8cc_source.html#l00017">17</a> of file <a class="el" href="mitm-attack_8cc_source.html">mitm-attack.cc</a>.</p>
+
+</div>
+</div>
+<a id="a3326e61d0c24de7f9e42b4bb96e5be7e" name="a3326e61d0c24de7f9e42b4bb96e5be7e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3326e61d0c24de7f9e42b4bb96e5be7e">&#9670;&#160;</a></span>mitmPort</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint16_t mitmPort = 8080</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="mitm-attack_8cc_source.html#l00016">16</a> of file <a class="el" href="mitm-attack_8cc_source.html">mitm-attack.cc</a>.</p>
+
+</div>
+</div>
+</div><!-- contents -->
+</div><!-- doc-content -->

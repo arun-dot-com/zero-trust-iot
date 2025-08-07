@@ -1,0 +1,5 @@
+<map id="TcpReceiver::HandleAccept" name="TcpReceiver::HandleAccept">
+<area shape="rect" id="Node000001" title="Accepts a new incoming connection." alt="" coords="265,5,464,31"/>
+<area shape="rect" id="Node000002" href="$classTcpReceiver.html#a7af928b938a88ebbf3d5ac3f0fca0fca" title="Called when the application starts. Binds and listens on the socket." alt="" coords="5,5,217,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="251,21,217,21,217,15,251,15"/>
+</map>

@@ -1,0 +1,1258 @@
+<?xml version='1.0' encoding='UTF-8' standalone='yes' ?>
+<tagfile doxygen_version="1.9.8">
+  <compound kind="file">
+    <name>mitm-attack.cc</name>
+    <path>examples/mitm/</path>
+    <filename>mitm-attack_8cc.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>NS_LOG_COMPONENT_DEFINE</name>
+      <anchorfile>mitm-attack_8cc.html</anchorfile>
+      <anchor>a31a4e1db113301f6869b30c13dadf661</anchor>
+      <arglist>(&quot;MitMAttackUDP&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SendFromSensor</name>
+      <anchorfile>mitm-attack_8cc.html</anchorfile>
+      <anchor>ae80caccc8855688279c1a87987a9c267</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket, Address mitmAddr, std::string message)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>ReceiveAtGateway</name>
+      <anchorfile>mitm-attack_8cc.html</anchorfile>
+      <anchor>a6898e3febd567849e1a7310597beb21f</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>MitmReceiveAndForward</name>
+      <anchorfile>mitm-attack_8cc.html</anchorfile>
+      <anchor>a2d3153c36501901f35611c7faac2c56e</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>main</name>
+      <anchorfile>mitm-attack_8cc.html</anchorfile>
+      <anchor>a0ddf1224851353fc92bfbff6f499fa97</anchor>
+      <arglist>(int argc, char *argv[])</arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>mitmPort</name>
+      <anchorfile>mitm-attack_8cc.html</anchorfile>
+      <anchor>a3326e61d0c24de7f9e42b4bb96e5be7e</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>gatewayPort</name>
+      <anchorfile>mitm-attack_8cc.html</anchorfile>
+      <anchor>aae6750e209d2db65f6041f86d7b46fd7</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Ipv4Address</type>
+      <name>g_gatewayAddress</name>
+      <anchorfile>mitm-attack_8cc.html</anchorfile>
+      <anchor>a870231762e4c5770542e792c0f253698</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>mitm-mitigation.cc</name>
+    <path>examples/mitm/</path>
+    <filename>mitm-mitigation_8cc.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>ReceiveAtGateway</name>
+      <anchorfile>mitm-mitigation_8cc.html</anchorfile>
+      <anchor>a6898e3febd567849e1a7310597beb21f</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SendFromSensor</name>
+      <anchorfile>mitm-mitigation_8cc.html</anchorfile>
+      <anchor>a033167cc7a498741d454986f06be85cb</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket, Address gatewayAddr, uint32_t nodeId)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>AttackerSpoof</name>
+      <anchorfile>mitm-mitigation_8cc.html</anchorfile>
+      <anchor>a0c88ff0484e0651cb08fd5b6c4a3cbd2</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket, Address gatewayAddr)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>main</name>
+      <anchorfile>mitm-mitigation_8cc.html</anchorfile>
+      <anchor>a0ddf1224851353fc92bfbff6f499fa97</anchor>
+      <arglist>(int argc, char *argv[])</arglist>
+    </member>
+    <member kind="variable">
+      <type>Ptr&lt; ZtTlsHandshake &gt;</type>
+      <name>handshake</name>
+      <anchorfile>mitm-mitigation_8cc.html</anchorfile>
+      <anchor>adba57b7df483084cfe351903a33ea18a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>Ptr&lt; ZtPolicyEngine &gt;</type>
+      <name>policyEngine</name>
+      <anchorfile>mitm-mitigation_8cc.html</anchorfile>
+      <anchor>a62fc0b24152545ec7566be1b69834b31</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>CertificateAuthority</type>
+      <name>ca</name>
+      <anchorfile>mitm-mitigation_8cc.html</anchorfile>
+      <anchor>a0f7fdc33aff583a214d0b889e93526e9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable">
+      <type>uint16_t</type>
+      <name>port</name>
+      <anchorfile>mitm-mitigation_8cc.html</anchorfile>
+      <anchor>a8e0798404bf2cf5dabb84c5ba9a4f236</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>spoofing-attack.cc</name>
+    <path>examples/spoofing/</path>
+    <filename>spoofing-attack_8cc.html</filename>
+    <class kind="class">SimpleTcpApp</class>
+    <class kind="class">TcpReceiver</class>
+    <member kind="function">
+      <type></type>
+      <name>NS_LOG_COMPONENT_DEFINE</name>
+      <anchorfile>spoofing-attack_8cc.html</anchorfile>
+      <anchor>abbb2a5a244f46fa30747c489cbbc2318</anchor>
+      <arglist>(&quot;SpoofingAttack&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>main</name>
+      <anchorfile>spoofing-attack_8cc.html</anchorfile>
+      <anchor>a0ddf1224851353fc92bfbff6f499fa97</anchor>
+      <arglist>(int argc, char *argv[])</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>spoofing-mitigation.cc</name>
+    <path>examples/spoofing/</path>
+    <filename>spoofing-mitigation_8cc.html</filename>
+    <class kind="class">SecureSensorApp</class>
+    <class kind="class">SecureSinkApp</class>
+    <class kind="class">SimpleTcpApp</class>
+    <member kind="function">
+      <type></type>
+      <name>NS_LOG_COMPONENT_DEFINE</name>
+      <anchorfile>spoofing-mitigation_8cc.html</anchorfile>
+      <anchor>ab95ca354f9c6b073f684ff8077deca38</anchor>
+      <arglist>(&quot;SpoofingMitigated&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>main</name>
+      <anchorfile>spoofing-mitigation_8cc.html</anchorfile>
+      <anchor>a0ddf1224851353fc92bfbff6f499fa97</anchor>
+      <arglist>(int argc, char *argv[])</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>unauthorized-access-attack.cc</name>
+    <path>examples/unauthorized-access/</path>
+    <filename>unauthorized-access-attack_8cc.html</filename>
+    <class kind="class">SimpleTcpApp</class>
+    <class kind="class">BasicSink</class>
+    <member kind="function">
+      <type></type>
+      <name>NS_LOG_COMPONENT_DEFINE</name>
+      <anchorfile>unauthorized-access-attack_8cc.html</anchorfile>
+      <anchor>ad9fe785a2cdd72b7fc260147a8ee129f</anchor>
+      <arglist>(&quot;UnauthorizedAccessAttack&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>main</name>
+      <anchorfile>unauthorized-access-attack_8cc.html</anchorfile>
+      <anchor>a0ddf1224851353fc92bfbff6f499fa97</anchor>
+      <arglist>(int argc, char *argv[])</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>unauthorized-access-mitigation.cc</name>
+    <path>examples/unauthorized-access/</path>
+    <filename>unauthorized-access-mitigation_8cc.html</filename>
+    <class kind="class">SecureSensorApp</class>
+    <class kind="class">SecureSink</class>
+    <class kind="class">AttackerApp</class>
+    <member kind="function">
+      <type></type>
+      <name>NS_LOG_COMPONENT_DEFINE</name>
+      <anchorfile>unauthorized-access-mitigation_8cc.html</anchorfile>
+      <anchor>a61cb222235f720a1f003d15056bf6e81</anchor>
+      <arglist>(&quot;UnauthorizedAccessMitigated&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type>int</type>
+      <name>main</name>
+      <anchorfile>unauthorized-access-mitigation_8cc.html</anchorfile>
+      <anchor>a0ddf1224851353fc92bfbff6f499fa97</anchor>
+      <arglist>(int argc, char *argv[])</arglist>
+    </member>
+  </compound>
+  <compound kind="file">
+    <name>zt-certificate.cc</name>
+    <path>model/</path>
+    <filename>zt-certificate_8cc.html</filename>
+    <includes id="zt-certificate_8h" name="zt-certificate.h" local="yes" import="no" module="no" objc="no">zt-certificate.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>zt-certificate.h</name>
+    <path>model/</path>
+    <filename>zt-certificate_8h.html</filename>
+    <class kind="class">CertificateAuthority</class>
+    <class kind="class">ZtPolicyEngineWithCert</class>
+  </compound>
+  <compound kind="file">
+    <name>zt-encryption-utils.cc</name>
+    <path>model/</path>
+    <filename>zt-encryption-utils_8cc.html</filename>
+    <namespace>ns3</namespace>
+  </compound>
+  <compound kind="file">
+    <name>zt-encryption-utils.h</name>
+    <path>model/</path>
+    <filename>zt-encryption-utils_8h.html</filename>
+    <namespace>ns3</namespace>
+  </compound>
+  <compound kind="file">
+    <name>zt-logger.cc</name>
+    <path>model/</path>
+    <filename>zt-logger_8cc.html</filename>
+    <includes id="zt-logger_8h" name="zt-logger.h" local="yes" import="no" module="no" objc="no">zt-logger.h</includes>
+  </compound>
+  <compound kind="file">
+    <name>zt-logger.h</name>
+    <path>model/</path>
+    <filename>zt-logger_8h.html</filename>
+    <class kind="class">ZtLogger</class>
+  </compound>
+  <compound kind="file">
+    <name>zt-policy-engine.cc</name>
+    <path>model/</path>
+    <filename>zt-policy-engine_8cc.html</filename>
+    <includes id="zt-policy-engine_8h" name="zt-policy-engine.h" local="yes" import="no" module="no" objc="no">zt-policy-engine.h</includes>
+    <namespace>ns3</namespace>
+  </compound>
+  <compound kind="file">
+    <name>zt-policy-engine.h</name>
+    <path>model/</path>
+    <filename>zt-policy-engine_8h.html</filename>
+    <class kind="class">ns3::ZtPolicyEngine</class>
+    <namespace>ns3</namespace>
+  </compound>
+  <compound kind="file">
+    <name>zt-tls-handshake.cc</name>
+    <path>model/</path>
+    <filename>zt-tls-handshake_8cc.html</filename>
+    <includes id="zt-tls-handshake_8h" name="zt-tls-handshake.h" local="yes" import="no" module="no" objc="no">zt-tls-handshake.h</includes>
+    <namespace>ns3</namespace>
+  </compound>
+  <compound kind="file">
+    <name>zt-tls-handshake.h</name>
+    <path>model/</path>
+    <filename>zt-tls-handshake_8h.html</filename>
+    <class kind="class">ns3::ZtTlsHandshake</class>
+    <namespace>ns3</namespace>
+  </compound>
+  <compound kind="file">
+    <name>zero-trust-iot.dox</name>
+    <path></path>
+    <filename>zero-trust-iot_8dox.html</filename>
+  </compound>
+  <compound kind="class">
+    <name>AttackerApp</name>
+    <filename>classAttackerApp.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classAttackerApp.html</anchorfile>
+      <anchor>afcaa5e9d18b8d38e79f6bd6ba2c679ff</anchor>
+      <arglist>(Address peer, std::string payload)</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classAttackerApp.html</anchorfile>
+      <anchor>aa3374dfde1cd586dc6f31fb17302469e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classAttackerApp.html</anchorfile>
+      <anchor>ae71a75b32b48acfc4ee2914994841c34</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>SendFake</name>
+      <anchorfile>classAttackerApp.html</anchorfile>
+      <anchor>a81ac032ce9d3d13c9dc57ff3b90e188f</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>m_socket</name>
+      <anchorfile>classAttackerApp.html</anchorfile>
+      <anchor>ae37130385497094e184342c927f81e9f</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Address</type>
+      <name>m_peer</name>
+      <anchorfile>classAttackerApp.html</anchorfile>
+      <anchor>a8af2291122ddadd534b58d2a0c764889</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::string</type>
+      <name>m_payload</name>
+      <anchorfile>classAttackerApp.html</anchorfile>
+      <anchor>a0b2335593251ca44120cda1f457a2d6d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>BasicSink</name>
+    <filename>classBasicSink.html</filename>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classBasicSink.html</anchorfile>
+      <anchor>ab0e1e160e166351342628a3ed4cb5a7b</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classBasicSink.html</anchorfile>
+      <anchor>a7fe3c627cc1b292e391438fc29f705a7</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>HandleAccept</name>
+      <anchorfile>classBasicSink.html</anchorfile>
+      <anchor>a91395a7d33cae2ac431b52d2427ee27c</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket, const Address &amp;address)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>HandleRead</name>
+      <anchorfile>classBasicSink.html</anchorfile>
+      <anchor>a41daf4933081c676241a1d15b2920235</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>m_socket</name>
+      <anchorfile>classBasicSink.html</anchorfile>
+      <anchor>a0ecc7f3f9685db2c5e17100aa4b4677e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>CertificateAuthority</name>
+    <filename>classCertificateAuthority.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>CertificateAuthority</name>
+      <anchorfile>classCertificateAuthority.html</anchorfile>
+      <anchor>abec8e5081156f93b44019a68e407c272</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>SignIdentity</name>
+      <anchorfile>classCertificateAuthority.html</anchorfile>
+      <anchor>af81edd447afd694376bb5e66d45bdd48</anchor>
+      <arglist>(uint32_t nodeId, const std::string &amp;role, time_t expiry)</arglist>
+    </member>
+    <member kind="function">
+      <type>CryptoPP::RSA::PublicKey</type>
+      <name>GetPublicKey</name>
+      <anchorfile>classCertificateAuthority.html</anchorfile>
+      <anchor>a0a05c9cdb69916beeeca0332034205cd</anchor>
+      <arglist>() const</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>CryptoPP::RSA::PrivateKey</type>
+      <name>privateKey</name>
+      <anchorfile>classCertificateAuthority.html</anchorfile>
+      <anchor>a6ae4ce083cbad3147ce440e63e313313</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>CryptoPP::RSA::PublicKey</type>
+      <name>publicKey</name>
+      <anchorfile>classCertificateAuthority.html</anchorfile>
+      <anchor>a47a7804096912df8401396907da3f4c3</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>SecureSensorApp</name>
+    <filename>classSecureSensorApp.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>aff04560ef27ffefaa1da1330c797d13b</anchor>
+      <arglist>(Address peerAddr, uint32_t nodeId, std::string role, std::string sensorData, Ptr&lt; ZtPolicyEngine &gt; policy, CertificateAuthority *ca, Ptr&lt; ZtTlsHandshake &gt; handshake)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>ad280ae95cb4ce34aaf64e4d6d02126c5</anchor>
+      <arglist>(Address peer, uint32_t nodeId, std::string role, std::string payload, Ptr&lt; ZtPolicyEngine &gt; policy, CertificateAuthority *ca, Ptr&lt; ZtTlsHandshake &gt; handshake)</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a05e3604df4cc65de733f672b33e33ee5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>SendEncrypted</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>abcf992d1e14b78f97e8755ee1cd7537a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>aca00efa16cbeee454347da5c884cda5a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a8635fc2bec887f0e43c6a289ffa83183</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a6920b0a7aef09832de032e72be8c5b2c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>SendEncrypted</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>abcf992d1e14b78f97e8755ee1cd7537a</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>socket</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>aa40fcfbe17060b33a47f2714a5c0e875</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Address</type>
+      <name>peer</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a3ca46d4a71deba9eb31061718dd1a6ce</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>uint32_t</type>
+      <name>nid</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a92049d4b4f9045eeedb25671a4307cef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::string</type>
+      <name>role</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>aa3a00be6f3541e51b05f69930ca09af5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::string</type>
+      <name>sensorData</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>af97fd5381349b5639eda93f738f9db31</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; ZtPolicyEngine &gt;</type>
+      <name>zt</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a3df20051bf85631835f6462da6859601</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>CertificateAuthority *</type>
+      <name>ca</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a78f7eb7c9d08f1acf964f54d39d73ecf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; ZtTlsHandshake &gt;</type>
+      <name>handshake</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a1d3deb9790e41159962a822c7a6b0eef</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>m_socket</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>aebfbe2f530e2b7ba0bfc0d793375ebd9</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Address</type>
+      <name>m_peer</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a941d02becec6b3b10ff67312fe2b66d3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>uint32_t</type>
+      <name>m_nodeId</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>ac53e54b036a0f1172cd9eb061afd7008</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::string</type>
+      <name>m_role</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a61f09dee50cf2e66c70c522b4bf23812</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::string</type>
+      <name>m_payload</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a130752317ac23f0937f70272855f6935</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; ZtPolicyEngine &gt;</type>
+      <name>m_policy</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>a664ee68a2fc0f16a04b9eba606906563</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>CertificateAuthority *</type>
+      <name>m_ca</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>ae1b2d9928fde4a974b424283634a7f9b</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; ZtTlsHandshake &gt;</type>
+      <name>m_handshake</name>
+      <anchorfile>classSecureSensorApp.html</anchorfile>
+      <anchor>ab633cdb6488c3ee9d02a6c547c94d3fb</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>SecureSink</name>
+    <filename>classSecureSink.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>a5a174d4b33ee9bb8769dd10c27149529</anchor>
+      <arglist>(Address listen, Ptr&lt; ZtPolicyEngine &gt; policy, Ptr&lt; ZtTlsHandshake &gt; handshake)</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>ad09b7203b04b80cb3a8c89eb9174fbd2</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>af033fb67f557c40f57f6d7d8ec17f35d</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>HandleAccept</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>a5e00071e0d8327c46c34d2ffdbc386bc</anchor>
+      <arglist>(Ptr&lt; Socket &gt; s, const Address &amp;)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>HandleRead</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>a5987bbdb44f0b13e034968f6f836a61e</anchor>
+      <arglist>(Ptr&lt; Socket &gt; socket)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>m_socket</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>aceb0ffd41bfcd623216b048b80e4bbc0</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Address</type>
+      <name>m_local</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>a928f458daaee94de3bffa79372079c9d</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; ZtPolicyEngine &gt;</type>
+      <name>m_policy</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>a2eaadd14b000bb00b88315d5118e6513</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; ZtTlsHandshake &gt;</type>
+      <name>m_handshake</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>ae126c5f27ddf1c7b1629835ef9a99e0a</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::map&lt; uint32_t, bool &gt;</type>
+      <name>m_authorized</name>
+      <anchorfile>classSecureSink.html</anchorfile>
+      <anchor>afc3d6feffc492977a3fab489083d7af9</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>SecureSinkApp</name>
+    <filename>classSecureSinkApp.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>a9c321e1ffae7219abb364b0e4de2d160</anchor>
+      <arglist>(Address listen, Ptr&lt; ZtPolicyEngine &gt; policy, Ptr&lt; ZtTlsHandshake &gt; handshake)</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>ac45868eb53a9a2e9d12e46f355731811</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>HandleAccept</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>a5ee6aadf29ff1a4560e160520bba0030</anchor>
+      <arglist>(Ptr&lt; Socket &gt; s, const Address &amp;)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>HandleRead</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>a3a672bd05d4399036c2f7fe92c205962</anchor>
+      <arglist>(Ptr&lt; Socket &gt; s)</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>a6fbcd6cddb49925547ecc659e403e36e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>socket</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>abf50860b7894bb7e97283d2a5e3e5132</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Address</type>
+      <name>local</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>aa3918e2fe7f8eb9187e6abc79180abb3</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; ZtPolicyEngine &gt;</type>
+      <name>zt</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>afe35fe0e5fe4f0e2860b265b9e3f0d79</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; ZtTlsHandshake &gt;</type>
+      <name>handshake</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>a8db44439bae9c0ec9726c4922aa3c9e8</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::map&lt; uint32_t, bool &gt;</type>
+      <name>authorized</name>
+      <anchorfile>classSecureSinkApp.html</anchorfile>
+      <anchor>aad35d3ba3bac4b3051e8624d92ae0e2e</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>SimpleTcpApp</name>
+    <filename>classSimpleTcpApp.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a11dcc2584c2df0c42340ed53dc3d3e1b</anchor>
+      <arglist>(Address addr, std::string message)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a35ac6987593d5121284b8991930c8fd3</anchor>
+      <arglist>(Address address, std::string payload)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a3c85e8988358dc64e8cd73709804afa1</anchor>
+      <arglist>(Address peerAddr, std::string message)</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>abb8bb48508627c3983ccccf158f75db6</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>Send</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a36dfb50c661e647cea0c046d8d89a258</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a093ef60fa6aef36830a24b04f669753e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a6180b0138ed1f42886c750b04e2d73c3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>SendData</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>acb8cc630b1c0aaa0bfd66496b13ee2e5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a1fb4e862a8b9abf9ddfcc0a372a6753c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a6180b0138ed1f42886c750b04e2d73c3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a1fb4e862a8b9abf9ddfcc0a372a6753c</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>SendData</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>acb8cc630b1c0aaa0bfd66496b13ee2e5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>socket</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a3f3bd3b6a0b1c26edc4e19d078538e68</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Address</type>
+      <name>peer</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a14566cd27e7ae082bf0cd66788ae48ec</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::string</type>
+      <name>data</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a012f8ec3f804d291f8d8d2be4f1fbfa5</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>m_socket</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>af12a3641e0ff3291f4348c8a8bf19692</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Address</type>
+      <name>m_peer</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a03a024a2d41f5a500d83e779322cbe38</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::string</type>
+      <name>m_payload</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a3f137007c2bc19765951c8179f7d8aed</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::string</type>
+      <name>m_message</name>
+      <anchorfile>classSimpleTcpApp.html</anchorfile>
+      <anchor>a37442dca58892e775d778a7aac5a178d</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>TcpReceiver</name>
+    <filename>classTcpReceiver.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>Setup</name>
+      <anchorfile>classTcpReceiver.html</anchorfile>
+      <anchor>a42b18d447c15746a784732bd1b297759</anchor>
+      <arglist>(Address listen)</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StartApplication</name>
+      <anchorfile>classTcpReceiver.html</anchorfile>
+      <anchor>a7af928b938a88ebbf3d5ac3f0fca0fca</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>HandleAccept</name>
+      <anchorfile>classTcpReceiver.html</anchorfile>
+      <anchor>abd2527568f8c5e444bbae5c5f9fd0f66</anchor>
+      <arglist>(Ptr&lt; Socket &gt; s, const Address &amp;address)</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>HandleRead</name>
+      <anchorfile>classTcpReceiver.html</anchorfile>
+      <anchor>a7dc942659af18849e7f40413a67ba4dd</anchor>
+      <arglist>(Ptr&lt; Socket &gt; s)</arglist>
+    </member>
+    <member kind="function" protection="private" virtualness="virtual">
+      <type>virtual void</type>
+      <name>StopApplication</name>
+      <anchorfile>classTcpReceiver.html</anchorfile>
+      <anchor>a23c2d88af57f33ce31db6d0c6d126ad3</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Ptr&lt; Socket &gt;</type>
+      <name>socket</name>
+      <anchorfile>classTcpReceiver.html</anchorfile>
+      <anchor>a49ecc11e49c68e849982869d911287cf</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>Address</type>
+      <name>local</name>
+      <anchorfile>classTcpReceiver.html</anchorfile>
+      <anchor>a241dbcee7d8cf80fea6ad0daff803daa</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ZtLogger</name>
+    <filename>classZtLogger.html</filename>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>EnableTimestamps</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>ab162532b5864fe679e2a333b1184fc56</anchor>
+      <arglist>(bool enable)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>Log</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>ab4743f29e35568cb7e4652d3b012061d</anchor>
+      <arglist>(const std::string &amp;tag, const std::string &amp;message)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>LogCertIssued</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>a467e70148db6fc7fb134e1fa7496ca35</anchor>
+      <arglist>(uint32_t nodeId, const std::string &amp;role, time_t expiry)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>LogCertValidationResult</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>a7cb7af75ab16a0546537b47c0ca9c72c</anchor>
+      <arglist>(uint32_t nodeId, bool valid)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>LogCertRevoked</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>a469cc56e10c69104f7f88b6a3a3cfe0d</anchor>
+      <arglist>(uint32_t nodeId)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>LogCertRejected</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>a1875b16f51cbdf5e27ef37ff3bf6b4f1</anchor>
+      <arglist>(const std::string &amp;reason)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>LogEncryption</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>ac3f4de629944eec6b0befaf1fcbdce7d</anchor>
+      <arglist>(const std::string &amp;payload, const std::string &amp;ivHex)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>LogDecryption</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>a707c469faa37ed9db73c2183097b6dfb</anchor>
+      <arglist>(const std::string &amp;payload)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static void</type>
+      <name>LogDecryptionFailure</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>aacf37e88e6a7076e227056e8d64f9876</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private" static="yes">
+      <type>static bool</type>
+      <name>timestampsEnabled</name>
+      <anchorfile>classZtLogger.html</anchorfile>
+      <anchor>ad76e4f9dc0727252d6a8213ecfad2e98</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ns3::ZtPolicyEngine</name>
+    <filename>classns3_1_1ZtPolicyEngine.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>AddAuthorized</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>a0217ca6949d342e79d1d4b92eb4dc897</anchor>
+      <arglist>(uint32_t nodeId, const std::string &amp;role)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>Authorize</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>a7448b40d07dcbd5c574941aabf08f582</anchor>
+      <arglist>(uint32_t nodeId, const std::string &amp;role)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetCaPublicKey</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>acc0fe8c68715d8c07a7a60b80ff4f126</anchor>
+      <arglist>(RSA::PublicKey pub)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Revoke</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>a55d18ab06dd83ab329b2f7dfdd071360</anchor>
+      <arglist>(uint32_t nodeId)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>AuthorizeWithCert</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>ade642a0914681e3c9707a71f965b6419</anchor>
+      <arglist>(uint32_t nodeId, const std::string &amp;role, const std::string &amp;certStr)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TypeId</type>
+      <name>GetTypeId</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>a2aefaa6bd9c5265615d40b9a453591e4</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_map&lt; uint32_t, std::string &gt;</type>
+      <name>authTable</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>a1c4f7e793dabbea20b17549759d296f1</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_set&lt; uint32_t &gt;</type>
+      <name>revoke</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>a1352ea38d9ad66c3ce7af825a41ede22</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>RSA::PublicKey</type>
+      <name>caPublicKey</name>
+      <anchorfile>classns3_1_1ZtPolicyEngine.html</anchorfile>
+      <anchor>ac7903cd9f2e89e3b68d35a20648cb447</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ZtPolicyEngineWithCert</name>
+    <filename>classZtPolicyEngineWithCert.html</filename>
+    <member kind="function">
+      <type>void</type>
+      <name>SetCaPublicKey</name>
+      <anchorfile>classZtPolicyEngineWithCert.html</anchorfile>
+      <anchor>aebfd91dc2da3e89e167347c4ac02a020</anchor>
+      <arglist>(CryptoPP::RSA::PublicKey pub)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>Revoke</name>
+      <anchorfile>classZtPolicyEngineWithCert.html</anchorfile>
+      <anchor>a20744e90ae812b4ade7ef7fd6bd67ef6</anchor>
+      <arglist>(uint32_t nodeId)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>Authorize</name>
+      <anchorfile>classZtPolicyEngineWithCert.html</anchorfile>
+      <anchor>acdf1d4e6be448a68175ed237a36c17d7</anchor>
+      <arglist>(uint32_t nodeId, const std::string &amp;role, const std::string &amp;certStr)</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>CryptoPP::RSA::PublicKey</type>
+      <name>caPublicKey</name>
+      <anchorfile>classZtPolicyEngineWithCert.html</anchorfile>
+      <anchor>aa5990db6733fa77a6d6516c1e4fb74fe</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::unordered_set&lt; uint32_t &gt;</type>
+      <name>revoke</name>
+      <anchorfile>classZtPolicyEngineWithCert.html</anchorfile>
+      <anchor>ade65a33825c2b3cb097e3048916a1f2c</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="class">
+    <name>ns3::ZtTlsHandshake</name>
+    <filename>classns3_1_1ZtTlsHandshake.html</filename>
+    <member kind="function">
+      <type></type>
+      <name>ZtTlsHandshake</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>a67f81c49c0842b1faebe7ad20913896e</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>StartHandshake</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>a29042c5c4785e838b79645942545f92f</anchor>
+      <arglist>(Ptr&lt; Node &gt; client, Ptr&lt; Node &gt; server, uint32_t clientId, uint32_t serverId)</arglist>
+    </member>
+    <member kind="function">
+      <type>bool</type>
+      <name>HasSession</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>ad1e698d5081470b3aa241b1c1c59440f</anchor>
+      <arglist>(uint32_t peerId) const</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>GetSessionKey</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>aabc886b5e40d5cd11a85100f9a92b6be</anchor>
+      <arglist>(uint32_t peerId) const</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetExternalLogger</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>a5dfe3328be71d6a33a17c0eefc9b49f1</anchor>
+      <arglist>(std::function&lt; void(std::string)&gt; logger)</arglist>
+    </member>
+    <member kind="function">
+      <type>void</type>
+      <name>SetPolicyValidator</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>add609547dbe02334086d633b46d4e06c</anchor>
+      <arglist>(std::function&lt; bool(uint32_t, std::string)&gt; validator)</arglist>
+    </member>
+    <member kind="function" static="yes">
+      <type>static TypeId</type>
+      <name>GetTypeId</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>a8dc1ccb96fbe1a00a70378194b1701d5</anchor>
+      <arglist>()</arglist>
+    </member>
+    <member kind="function" protection="private">
+      <type>void</type>
+      <name>Log</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>adbdfe90fefa640daea258641efe0e945</anchor>
+      <arglist>(const std::string &amp;msg) const</arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::map&lt; uint32_t, std::string &gt;</type>
+      <name>m_sessionKeys</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>ab6d6e50e909f65baae9a50f6164bdaaa</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::function&lt; void(std::string)&gt;</type>
+      <name>m_logger</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>a7816d7d5794490047c8bf581f0b390ff</anchor>
+      <arglist></arglist>
+    </member>
+    <member kind="variable" protection="private">
+      <type>std::function&lt; bool(uint32_t, std::string)&gt;</type>
+      <name>m_policyValidator</name>
+      <anchorfile>classns3_1_1ZtTlsHandshake.html</anchorfile>
+      <anchor>acaf9716eaf521974ca50939619ff54da</anchor>
+      <arglist></arglist>
+    </member>
+  </compound>
+  <compound kind="namespace">
+    <name>ns3</name>
+    <filename>namespacens3.html</filename>
+    <class kind="class">ns3::ZtPolicyEngine</class>
+    <class kind="class">ns3::ZtTlsHandshake</class>
+    <member kind="function">
+      <type>std::string</type>
+      <name>EncryptPayload</name>
+      <anchorfile>namespacens3.html</anchorfile>
+      <anchor>a15964bad59df770e70c1efa2be78b7fb</anchor>
+      <arglist>(const std::string &amp;data, const byte *key, std::string &amp;ivOut)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>DecryptPayload</name>
+      <anchorfile>namespacens3.html</anchorfile>
+      <anchor>abcc9f927462e02351cf483e484c8eac0</anchor>
+      <arglist>(const std::string &amp;cipher, const byte *key)</arglist>
+    </member>
+    <member kind="function">
+      <type>SecByteBlock</type>
+      <name>HexDecodeKey</name>
+      <anchorfile>namespacens3.html</anchorfile>
+      <anchor>af9b3b1642d0cadbd7ff0948f32fb14a3</anchor>
+      <arglist>(const std::string &amp;hex)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::vector&lt; CryptoPP::byte &gt;</type>
+      <name>HexToBytes</name>
+      <anchorfile>namespacens3.html</anchorfile>
+      <anchor>aa5c1b03e21921c7c1fabc7602f96b230</anchor>
+      <arglist>(const std::string &amp;hex)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>EncryptPayload</name>
+      <anchorfile>namespacens3.html</anchorfile>
+      <anchor>a1e357f9bb51a4162667cc3a8f770a838</anchor>
+      <arglist>(const std::string &amp;data, const CryptoPP::byte *key, std::string &amp;ivOut)</arglist>
+    </member>
+    <member kind="function">
+      <type>std::string</type>
+      <name>DecryptPayload</name>
+      <anchorfile>namespacens3.html</anchorfile>
+      <anchor>a54c65234f839d94e9c8e6466f9ac0d6b</anchor>
+      <arglist>(const std::string &amp;cipher, const CryptoPP::byte *key)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NS_LOG_COMPONENT_DEFINE</name>
+      <anchorfile>namespacens3.html</anchorfile>
+      <anchor>a1f1df1b4749aa2887f30b839e6c7fdcb</anchor>
+      <arglist>(&quot;ZtPolicyEngine&quot;)</arglist>
+    </member>
+    <member kind="function">
+      <type></type>
+      <name>NS_LOG_COMPONENT_DEFINE</name>
+      <anchorfile>namespacens3.html</anchorfile>
+      <anchor>aebae71c558c291484166351c93c58033</anchor>
+      <arglist>(&quot;ZtTlsHandshake&quot;)</arglist>
+    </member>
+  </compound>
+  <compound kind="page">
+    <name>index</name>
+    <title>Zero Trust IoT Security Library for NS-3</title>
+    <filename>index.html</filename>
+    <docanchor file="index.html" title="Overview">overview</docanchor>
+    <docanchor file="index.html" title="Purpose">purpose</docanchor>
+    <docanchor file="index.html" title="Library Architecture">architecture</docanchor>
+    <docanchor file="index.html" title="Supported Use Cases">usecases</docanchor>
+    <docanchor file="index.html" title="Usage">usage</docanchor>
+    <docanchor file="index.html" title="Development Status">status</docanchor>
+    <docanchor file="index.html" title="License">license</docanchor>
+    <docanchor file="index.html" title="Authors">authors</docanchor>
+  </compound>
+</tagfile>

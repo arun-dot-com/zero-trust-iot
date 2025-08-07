@@ -1,0 +1,22 @@
+<map id="SecureSinkApp::StartApplication" name="SecureSinkApp::StartApplication">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,135,236,160"/>
+<area shape="rect" id="Node000002" href="$classSecureSinkApp.html#a5ee6aadf29ff1a4560e160520bba0030" title=" " alt="" coords="284,135,501,160"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="236,145,270,145,270,150,236,150"/>
+<area shape="rect" id="Node000003" href="$classSecureSinkApp.html#a3a672bd05d4399036c2f7fe92c205962" title="Handle incoming packets, validate certificate, and decrypt authorized data." alt="" coords="549,135,756,160"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="502,145,535,145,535,150,502,150"/>
+<area shape="rect" id="Node000004" href="$namespacens3.html#abcc9f927462e02351cf483e484c8eac0" title="Decrypts a ciphertext string encrypted with EncryptPayload." alt="" coords="839,5,994,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="666,132,723,87,762,61,803,40,825,31,827,36,805,44,764,66,726,91,670,136"/>
+<area shape="rect" id="Node000005" href="$namespacens3.html#aa5c1b03e21921c7c1fabc7602f96b230" title="Converts a hexadecimal string into a byte vector." alt="" coords="851,55,982,80"/>
+<area shape="poly" id="edge4_Node000003_Node000005" title=" " alt="" coords="692,132,803,97,856,81,857,86,805,102,694,137"/>
+<area shape="rect" id="Node000006" href="$classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d" title="Logs a general message with a specified tag." alt="" coords="1077,192,1188,217"/>
+<area shape="poly" id="edge5_Node000003_Node000006" title=" " alt="" coords="728,132,793,125,869,122,950,126,1030,141,1072,158,1106,181,1104,186,1069,163,1029,146,950,131,869,127,793,130,728,137"/>
+<area shape="rect" id="Node000007" href="$classZtLogger.html#a7cb7af75ab16a0546537b47c0ca9c72c" title="Logs the result of certificate validation." alt="" coords="815,155,1018,195"/>
+<area shape="poly" id="edge6_Node000003_Node000007" title=" " alt="" coords="756,156,802,160,801,166,756,161"/>
+<area shape="rect" id="Node000008" href="$classZtLogger.html#a707c469faa37ed9db73c2183097b6dfb" title="Logs a successful decryption event." alt="" coords="825,220,1008,245"/>
+<area shape="poly" id="edge8_Node000003_Node000008" title=" " alt="" coords="683,158,739,181,805,205,839,214,837,219,803,210,737,186,681,163"/>
+<area shape="rect" id="Node000009" href="$classZtLogger.html#aacf37e88e6a7076e227056e8d64f9876" title="Logs a decryption failure event." alt="" coords="804,269,1029,295"/>
+<area shape="poly" id="edge10_Node000003_Node000009" title=" " alt="" coords="669,158,726,206,764,232,805,254,828,263,826,268,803,259,761,236,723,210,666,162"/>
+<area shape="poly" id="edge7_Node000007_Node000006" title=" " alt="" coords="1019,186,1064,193,1063,198,1018,192"/>
+<area shape="poly" id="edge9_Node000008_Node000006" title=" " alt="" coords="1008,218,1063,211,1064,216,1009,223"/>
+<area shape="poly" id="edge11_Node000009_Node000006" title=" " alt="" coords="986,267,1028,254,1097,222,1099,227,1030,259,987,272"/>
+</map>

@@ -1,0 +1,449 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Zero Trust IoT library: examples/spoofing/spoofing-mitigation.cc Source File</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/the-ns3-programmer/zero-trust-iot" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="zero-trust-iot.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zero Trust IoT library
+   </div>
+<div style="position: fixed; top: 1rem; right: 4rem; z-index: 1000; background-color: #eee; padding: 0.5rem; border-radius: 5px; cursor: pointer;">
+  <doxygen-awesome-dark-mode-toggle title="Toggle Light/Dark Mode" id="theme-toggle"></doxygen-awesome-dark-mode-toggle>
+</div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Force re-render of the component after load
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      // Trigger internal update by toggling the mode briefly
+      setTimeout(() => {
+        toggle.dispatchEvent(new Event('click'));
+        toggle.dispatchEvent(new Event('click'));
+      }, 10);
+    }
+  });
+</script>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function() { init_codefold(0); });
+/* @license-end */
+</script>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('spoofing-mitigation_8cc_source.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="headertitle"><div class="title">spoofing-mitigation.cc</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="spoofing-mitigation_8cc.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="preprocessor">#include &quot;ns3/core-module.h&quot;</span></div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="preprocessor">#include &quot;ns3/network-module.h&quot;</span></div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#include &quot;ns3/internet-module.h&quot;</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;ns3/point-to-point-module.h&quot;</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;ns3/applications-module.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;ns3/zero-trust-iot-module.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="keyword">using namespace </span><a class="code hl_namespace" href="namespacens3.html">ns3</a>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="spoofing-mitigation_8cc.html#ab95ca354f9c6b073f684ff8077deca38">   15</a></span><a class="code hl_function" href="spoofing-mitigation_8cc.html#ab95ca354f9c6b073f684ff8077deca38">NS_LOG_COMPONENT_DEFINE</a>(<span class="stringliteral">&quot;SpoofingMitigated&quot;</span>);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="};">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html">   20</a></span><span class="keyword">class </span><a class="code hl_class" href="classSecureSensorApp.html">SecureSensorApp</a> : <span class="keyword">public</span> Application {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00032" data-start="{" data-end="}">
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#aff04560ef27ffefaa1da1330c797d13b">   32</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSensorApp.html#aff04560ef27ffefaa1da1330c797d13b">Setup</a>(Address peerAddr, uint32_t nodeId, std::string <a class="code hl_variable" href="classSecureSensorApp.html#aa3a00be6f3541e51b05f69930ca09af5">role</a>, std::string <a class="code hl_variable" href="classSecureSensorApp.html#af97fd5381349b5639eda93f738f9db31">sensorData</a>,</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>             Ptr&lt;ZtPolicyEngine&gt; policy, <a class="code hl_class" href="classCertificateAuthority.html">CertificateAuthority</a>* <a class="code hl_variable" href="classSecureSensorApp.html#a78f7eb7c9d08f1acf964f54d39d73ecf">ca</a>, Ptr&lt;ZtTlsHandshake&gt; <a class="code hl_variable" href="classSecureSensorApp.html#a1d3deb9790e41159962a822c7a6b0eef">handshake</a>) {</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>    <a class="code hl_variable" href="classSecureSensorApp.html#a3ca46d4a71deba9eb31061718dd1a6ce">peer</a> = peerAddr;</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>    <a class="code hl_variable" href="classSecureSensorApp.html#a92049d4b4f9045eeedb25671a4307cef">nid</a> = nodeId;</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>    this-&gt;role = <a class="code hl_variable" href="classSecureSensorApp.html#aa3a00be6f3541e51b05f69930ca09af5">role</a>;</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>    this-&gt;sensorData = <a class="code hl_variable" href="classSecureSensorApp.html#af97fd5381349b5639eda93f738f9db31">sensorData</a>;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>    this-&gt;<a class="code hl_variable" href="classSecureSensorApp.html#a3df20051bf85631835f6462da6859601">zt</a> = policy;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>    this-&gt;ca = <a class="code hl_variable" href="classSecureSensorApp.html#a78f7eb7c9d08f1acf964f54d39d73ecf">ca</a>;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>    this-&gt;handshake = <a class="code hl_variable" href="classSecureSensorApp.html#a1d3deb9790e41159962a822c7a6b0eef">handshake</a>;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  }</div>
+</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span><span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00044" data-start="{" data-end="}">
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#a05e3604df4cc65de733f672b33e33ee5">   44</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSensorApp.html#a05e3604df4cc65de733f672b33e33ee5">StartApplication</a>() {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_variable" href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">socket</a> = Socket::CreateSocket(GetNode(), TcpSocketFactory::GetTypeId());</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_variable" href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">socket</a>-&gt;Connect(<a class="code hl_variable" href="classSecureSensorApp.html#a3ca46d4a71deba9eb31061718dd1a6ce">peer</a>);</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_variable" href="classSecureSensorApp.html#a1d3deb9790e41159962a822c7a6b0eef">handshake</a>-&gt;StartHandshake(GetNode(), GetNode(), <a class="code hl_variable" href="classSecureSensorApp.html#a92049d4b4f9045eeedb25671a4307cef">nid</a>, 1);</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    time_t expiry = std::time(<span class="keyword">nullptr</span>) + 60;</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    std::string cert = <a class="code hl_variable" href="classSecureSensorApp.html#a78f7eb7c9d08f1acf964f54d39d73ecf">ca</a>-&gt;<a class="code hl_function" href="classCertificateAuthority.html#af81edd447afd694376bb5e66d45bdd48">SignIdentity</a>(<a class="code hl_variable" href="classSecureSensorApp.html#a92049d4b4f9045eeedb25671a4307cef">nid</a>, <a class="code hl_variable" href="classSecureSensorApp.html#aa3a00be6f3541e51b05f69930ca09af5">role</a>, expiry);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="classZtLogger.html#a467e70148db6fc7fb134e1fa7496ca35">ZtLogger::LogCertIssued</a>(<a class="code hl_variable" href="classSecureSensorApp.html#a92049d4b4f9045eeedb25671a4307cef">nid</a>, <a class="code hl_variable" href="classSecureSensorApp.html#aa3a00be6f3541e51b05f69930ca09af5">role</a>, expiry);</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    Ptr&lt;Packet&gt; certPkt = Create&lt;Packet&gt;((uint8_t*)cert.c_str(), cert.size());</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_variable" href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">socket</a>-&gt;Send(certPkt);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span> </div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    Simulator::Schedule(Seconds(2.0), &amp;<a class="code hl_function" href="classSecureSensorApp.html#abcf992d1e14b78f97e8755ee1cd7537a">SecureSensorApp::SendEncrypted</a>, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  }</div>
+</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
+<div class="foldopen" id="foldopen00061" data-start="{" data-end="}">
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#abcf992d1e14b78f97e8755ee1cd7537a">   61</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSensorApp.html#abcf992d1e14b78f97e8755ee1cd7537a">SendEncrypted</a>() {</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    std::string sessionHexKey = <a class="code hl_variable" href="classSecureSensorApp.html#a1d3deb9790e41159962a822c7a6b0eef">handshake</a>-&gt;GetSessionKey(<a class="code hl_variable" href="classSecureSensorApp.html#a92049d4b4f9045eeedb25671a4307cef">nid</a>);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    std::vector&lt;byte&gt; rawKey = <a class="code hl_function" href="namespacens3.html#aa5c1b03e21921c7c1fabc7602f96b230">HexToBytes</a>(sessionHexKey);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    std::string iv;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    std::string encrypted = <a class="code hl_function" href="namespacens3.html#a15964bad59df770e70c1efa2be78b7fb">EncryptPayload</a>(<a class="code hl_variable" href="classSecureSensorApp.html#af97fd5381349b5639eda93f738f9db31">sensorData</a>, rawKey.data(), iv);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_function" href="classZtLogger.html#ac3f4de629944eec6b0befaf1fcbdce7d">ZtLogger::LogEncryption</a>(<a class="code hl_variable" href="classSecureSensorApp.html#af97fd5381349b5639eda93f738f9db31">sensorData</a>, iv);</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    Ptr&lt;Packet&gt; pkt = Create&lt;Packet&gt;((uint8_t*)encrypted.c_str(), encrypted.size());</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_variable" href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">socket</a>-&gt;Send(pkt);</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
+</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="foldopen" id="foldopen00071" data-start="{" data-end="}">
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#aca00efa16cbeee454347da5c884cda5a">   71</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSensorApp.html#aca00efa16cbeee454347da5c884cda5a">StopApplication</a>() {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">socket</a>) <a class="code hl_variable" href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">socket</a>-&gt;Close();</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  }</div>
+</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span> </div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">   75</a></span>  Ptr&lt;Socket&gt; <a class="code hl_variable" href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">socket</a>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#a3ca46d4a71deba9eb31061718dd1a6ce">   76</a></span>  Address <a class="code hl_variable" href="classSecureSensorApp.html#a3ca46d4a71deba9eb31061718dd1a6ce">peer</a>;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#a92049d4b4f9045eeedb25671a4307cef">   77</a></span>  uint32_t <a class="code hl_variable" href="classSecureSensorApp.html#a92049d4b4f9045eeedb25671a4307cef">nid</a>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#aa3a00be6f3541e51b05f69930ca09af5">   78</a></span>  std::string <a class="code hl_variable" href="classSecureSensorApp.html#aa3a00be6f3541e51b05f69930ca09af5">role</a>, <a class="code hl_variable" href="classSecureSensorApp.html#af97fd5381349b5639eda93f738f9db31">sensorData</a>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#a3df20051bf85631835f6462da6859601">   79</a></span>  Ptr&lt;ZtPolicyEngine&gt; <a class="code hl_variable" href="classSecureSensorApp.html#a3df20051bf85631835f6462da6859601">zt</a>;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#a78f7eb7c9d08f1acf964f54d39d73ecf">   80</a></span>  <a class="code hl_class" href="classCertificateAuthority.html">CertificateAuthority</a>* <a class="code hl_variable" href="classSecureSensorApp.html#a78f7eb7c9d08f1acf964f54d39d73ecf">ca</a>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno"><a class="line" href="classSecureSensorApp.html#a1d3deb9790e41159962a822c7a6b0eef">   81</a></span>  Ptr&lt;ZtTlsHandshake&gt; <a class="code hl_variable" href="classSecureSensorApp.html#a1d3deb9790e41159962a822c7a6b0eef">handshake</a>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>};</div>
+</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span> </div>
+<div class="foldopen" id="foldopen00087" data-start="{" data-end="};">
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html">   87</a></span><span class="keyword">class </span><a class="code hl_class" href="classSecureSinkApp.html">SecureSinkApp</a> : <span class="keyword">public</span> Application {</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00095" data-start="{" data-end="}">
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#a9c321e1ffae7219abb364b0e4de2d160">   95</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSinkApp.html#a9c321e1ffae7219abb364b0e4de2d160">Setup</a>(Address listen, Ptr&lt;ZtPolicyEngine&gt; policy, Ptr&lt;ZtTlsHandshake&gt; <a class="code hl_variable" href="classSecureSinkApp.html#a8db44439bae9c0ec9726c4922aa3c9e8">handshake</a>) {</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>    <a class="code hl_variable" href="classSecureSinkApp.html#aa3918e2fe7f8eb9187e6abc79180abb3">local</a> = listen;</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <a class="code hl_variable" href="classSecureSinkApp.html#afe35fe0e5fe4f0e2860b265b9e3f0d79">zt</a> = policy;</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    this-&gt;handshake = <a class="code hl_variable" href="classSecureSinkApp.html#a8db44439bae9c0ec9726c4922aa3c9e8">handshake</a>;</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  }</div>
+</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span> </div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span><span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00102" data-start="{" data-end="}">
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#ac45868eb53a9a2e9d12e46f355731811">  102</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSinkApp.html#ac45868eb53a9a2e9d12e46f355731811">StartApplication</a>() {</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>    <a class="code hl_variable" href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">socket</a> = Socket::CreateSocket(GetNode(), TcpSocketFactory::GetTypeId());</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    <a class="code hl_variable" href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">socket</a>-&gt;Bind(<a class="code hl_variable" href="classSecureSinkApp.html#aa3918e2fe7f8eb9187e6abc79180abb3">local</a>);</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>    <a class="code hl_variable" href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">socket</a>-&gt;Listen();</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <a class="code hl_variable" href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">socket</a>-&gt;SetAcceptCallback(MakeNullCallback&lt;<span class="keywordtype">bool</span>, Ptr&lt;Socket&gt;, <span class="keyword">const</span> Address&amp;&gt;(),</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>                              MakeCallback(&amp;<a class="code hl_function" href="classSecureSinkApp.html#a5ee6aadf29ff1a4560e160520bba0030">SecureSinkApp::HandleAccept</a>, <span class="keyword">this</span>));</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  }</div>
+</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span> </div>
+<div class="foldopen" id="foldopen00110" data-start="{" data-end="}">
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#a5ee6aadf29ff1a4560e160520bba0030">  110</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSinkApp.html#a5ee6aadf29ff1a4560e160520bba0030">HandleAccept</a>(Ptr&lt;Socket&gt; s, <span class="keyword">const</span> Address&amp;) {</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>    s-&gt;SetRecvCallback(MakeCallback(&amp;<a class="code hl_function" href="classSecureSinkApp.html#a3a672bd05d4399036c2f7fe92c205962">SecureSinkApp::HandleRead</a>, <span class="keyword">this</span>));</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  }</div>
+</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
+<div class="foldopen" id="foldopen00117" data-start="{" data-end="}">
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#a3a672bd05d4399036c2f7fe92c205962">  117</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSinkApp.html#a3a672bd05d4399036c2f7fe92c205962">HandleRead</a>(Ptr&lt;Socket&gt; s) {</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>    <span class="keywordflow">while</span> (Ptr&lt;Packet&gt; pkt = s-&gt;Recv()) {</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>      uint32_t size = pkt-&gt;GetSize();</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>      uint8_t* buffer = <span class="keyword">new</span> uint8_t[size];</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>      pkt-&gt;CopyData(buffer, size);</div>
+<div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>      std::string data(<span class="keyword">reinterpret_cast&lt;</span><span class="keywordtype">char</span>*<span class="keyword">&gt;</span>(buffer), size);</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>      <span class="keyword">delete</span>[] buffer;</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span> </div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span>      <span class="comment">// Certificate validation</span></div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>      <span class="keywordflow">if</span> (data.find(<span class="stringliteral">&quot;ID:&quot;</span>) == 0) {</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        <span class="keywordtype">size_t</span> idPos = data.find(<span class="stringliteral">&quot;ID:&quot;</span>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>        <span class="keywordtype">size_t</span> rolePos = data.find(<span class="stringliteral">&quot;|ROLE:&quot;</span>);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="keywordtype">size_t</span> expPos = data.find(<span class="stringliteral">&quot;|EXP:&quot;</span>);</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        uint32_t nodeId = std::stoul(data.substr(idPos + 3, rolePos - idPos - 3));</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        std::string role = data.substr(rolePos + 6, expPos - rolePos - 6);</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span> </div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>        <span class="keywordtype">bool</span> valid = <a class="code hl_variable" href="classSecureSinkApp.html#afe35fe0e5fe4f0e2860b265b9e3f0d79">zt</a>-&gt;AuthorizeWithCert(nodeId, role, data);</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span>        <a class="code hl_function" href="classZtLogger.html#a7cb7af75ab16a0546537b47c0ca9c72c">ZtLogger::LogCertValidationResult</a>(nodeId, valid);</div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>        <a class="code hl_variable" href="classSecureSinkApp.html#aad35d3ba3bac4b3051e8624d92ae0e2e">authorized</a>[nodeId] = valid;</div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span> </div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span>        <a class="code hl_variable" href="classSecureSinkApp.html#a8db44439bae9c0ec9726c4922aa3c9e8">handshake</a>-&gt;StartHandshake(GetNode(), GetNode(), nodeId, 1);</div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>        <span class="keywordflow">return</span>;</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>      }</div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span> </div>
+<div class="line"><a id="l00141" name="l00141"></a><span class="lineno">  141</span>      <span class="comment">// Decryption only if authorized</span></div>
+<div class="line"><a id="l00142" name="l00142"></a><span class="lineno">  142</span>      uint32_t peerId = 0;</div>
+<div class="line"><a id="l00143" name="l00143"></a><span class="lineno">  143</span>      <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSecureSinkApp.html#aad35d3ba3bac4b3051e8624d92ae0e2e">authorized</a>[peerId]) {</div>
+<div class="line"><a id="l00144" name="l00144"></a><span class="lineno">  144</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00145" name="l00145"></a><span class="lineno">  145</span>          std::string sessionHexKey = <a class="code hl_variable" href="classSecureSinkApp.html#a8db44439bae9c0ec9726c4922aa3c9e8">handshake</a>-&gt;GetSessionKey(1);</div>
+<div class="line"><a id="l00146" name="l00146"></a><span class="lineno">  146</span>          std::vector&lt;byte&gt; rawKey = <a class="code hl_function" href="namespacens3.html#aa5c1b03e21921c7c1fabc7602f96b230">HexToBytes</a>(sessionHexKey);</div>
+<div class="line"><a id="l00147" name="l00147"></a><span class="lineno">  147</span>          std::string decrypted = <a class="code hl_function" href="namespacens3.html#abcc9f927462e02351cf483e484c8eac0">DecryptPayload</a>(data, rawKey.data());</div>
+<div class="line"><a id="l00148" name="l00148"></a><span class="lineno">  148</span>          <a class="code hl_function" href="classZtLogger.html#a707c469faa37ed9db73c2183097b6dfb">ZtLogger::LogDecryption</a>(decrypted);</div>
+<div class="line"><a id="l00149" name="l00149"></a><span class="lineno">  149</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a id="l00150" name="l00150"></a><span class="lineno">  150</span>          <a class="code hl_function" href="classZtLogger.html#aacf37e88e6a7076e227056e8d64f9876">ZtLogger::LogDecryptionFailure</a>();</div>
+<div class="line"><a id="l00151" name="l00151"></a><span class="lineno">  151</span>        }</div>
+<div class="line"><a id="l00152" name="l00152"></a><span class="lineno">  152</span>      } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00153" name="l00153"></a><span class="lineno">  153</span>        <a class="code hl_function" href="classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d">ZtLogger::Log</a>(<span class="stringliteral">&quot;ZT&quot;</span>, <span class="stringliteral">&quot;Unauthorized data attempt&quot;</span>);</div>
+<div class="line"><a id="l00154" name="l00154"></a><span class="lineno">  154</span>      }</div>
+<div class="line"><a id="l00155" name="l00155"></a><span class="lineno">  155</span>    }</div>
+<div class="line"><a id="l00156" name="l00156"></a><span class="lineno">  156</span>  }</div>
+</div>
+<div class="line"><a id="l00157" name="l00157"></a><span class="lineno">  157</span> </div>
+<div class="foldopen" id="foldopen00158" data-start="{" data-end="}">
+<div class="line"><a id="l00158" name="l00158"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#a6fbcd6cddb49925547ecc659e403e36e">  158</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSecureSinkApp.html#a6fbcd6cddb49925547ecc659e403e36e">StopApplication</a>() {</div>
+<div class="line"><a id="l00159" name="l00159"></a><span class="lineno">  159</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">socket</a>) <a class="code hl_variable" href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">socket</a>-&gt;Close();</div>
+<div class="line"><a id="l00160" name="l00160"></a><span class="lineno">  160</span>  }</div>
+</div>
+<div class="line"><a id="l00161" name="l00161"></a><span class="lineno">  161</span> </div>
+<div class="line"><a id="l00162" name="l00162"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">  162</a></span>  Ptr&lt;Socket&gt; <a class="code hl_variable" href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">socket</a>;</div>
+<div class="line"><a id="l00163" name="l00163"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#aa3918e2fe7f8eb9187e6abc79180abb3">  163</a></span>  Address <a class="code hl_variable" href="classSecureSinkApp.html#aa3918e2fe7f8eb9187e6abc79180abb3">local</a>;</div>
+<div class="line"><a id="l00164" name="l00164"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#afe35fe0e5fe4f0e2860b265b9e3f0d79">  164</a></span>  Ptr&lt;ZtPolicyEngine&gt; <a class="code hl_variable" href="classSecureSinkApp.html#afe35fe0e5fe4f0e2860b265b9e3f0d79">zt</a>;</div>
+<div class="line"><a id="l00165" name="l00165"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#a8db44439bae9c0ec9726c4922aa3c9e8">  165</a></span>  Ptr&lt;ZtTlsHandshake&gt; <a class="code hl_variable" href="classSecureSinkApp.html#a8db44439bae9c0ec9726c4922aa3c9e8">handshake</a>;</div>
+<div class="line"><a id="l00166" name="l00166"></a><span class="lineno"><a class="line" href="classSecureSinkApp.html#aad35d3ba3bac4b3051e8624d92ae0e2e">  166</a></span>  std::map&lt;uint32_t, bool&gt; <a class="code hl_variable" href="classSecureSinkApp.html#aad35d3ba3bac4b3051e8624d92ae0e2e">authorized</a>;</div>
+<div class="line"><a id="l00167" name="l00167"></a><span class="lineno">  167</span>};</div>
+</div>
+<div class="line"><a id="l00168" name="l00168"></a><span class="lineno">  168</span> </div>
+<div class="line"><a id="l00172" name="l00172"></a><span class="lineno">  172</span><span class="keyword">class </span><a class="code hl_class" href="classSimpleTcpApp.html">SimpleTcpApp</a> : <span class="keyword">public</span> Application {</div>
+<div class="line"><a id="l00173" name="l00173"></a><span class="lineno">  173</span><span class="keyword">public</span>:</div>
+<div class="foldopen" id="foldopen00179" data-start="{" data-end="}">
+<div class="line"><a id="l00179" name="l00179"></a><span class="lineno"><a class="line" href="classSimpleTcpApp.html#a35ac6987593d5121284b8991930c8fd3">  179</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSimpleTcpApp.html#a35ac6987593d5121284b8991930c8fd3">Setup</a>(Address address, std::string payload) {</div>
+<div class="line"><a id="l00180" name="l00180"></a><span class="lineno">  180</span>    <a class="code hl_variable" href="classSimpleTcpApp.html#a03a024a2d41f5a500d83e779322cbe38">m_peer</a> = address;</div>
+<div class="line"><a id="l00181" name="l00181"></a><span class="lineno">  181</span>    <a class="code hl_variable" href="classSimpleTcpApp.html#a3f137007c2bc19765951c8179f7d8aed">m_payload</a> = payload;</div>
+<div class="line"><a id="l00182" name="l00182"></a><span class="lineno">  182</span>  }</div>
+</div>
+<div class="line"><a id="l00183" name="l00183"></a><span class="lineno">  183</span> </div>
+<div class="line"><a id="l00184" name="l00184"></a><span class="lineno">  184</span><span class="keyword">private</span>:</div>
+<div class="foldopen" id="foldopen00185" data-start="{" data-end="}">
+<div class="line"><a id="l00185" name="l00185"></a><span class="lineno"><a class="line" href="classSimpleTcpApp.html#a6180b0138ed1f42886c750b04e2d73c3">  185</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSimpleTcpApp.html#a6180b0138ed1f42886c750b04e2d73c3">StartApplication</a>() {</div>
+<div class="line"><a id="l00186" name="l00186"></a><span class="lineno">  186</span>    <a class="code hl_variable" href="classSimpleTcpApp.html#af12a3641e0ff3291f4348c8a8bf19692">m_socket</a> = Socket::CreateSocket(GetNode(), TcpSocketFactory::GetTypeId());</div>
+<div class="line"><a id="l00187" name="l00187"></a><span class="lineno">  187</span>    <a class="code hl_variable" href="classSimpleTcpApp.html#af12a3641e0ff3291f4348c8a8bf19692">m_socket</a>-&gt;Connect(<a class="code hl_variable" href="classSimpleTcpApp.html#a03a024a2d41f5a500d83e779322cbe38">m_peer</a>);</div>
+<div class="line"><a id="l00188" name="l00188"></a><span class="lineno">  188</span>    Simulator::Schedule(Seconds(2.0), &amp;<a class="code hl_function" href="classSimpleTcpApp.html#acb8cc630b1c0aaa0bfd66496b13ee2e5">SimpleTcpApp::SendData</a>, <span class="keyword">this</span>);</div>
+<div class="line"><a id="l00189" name="l00189"></a><span class="lineno">  189</span>  }</div>
+</div>
+<div class="line"><a id="l00190" name="l00190"></a><span class="lineno">  190</span> </div>
+<div class="foldopen" id="foldopen00191" data-start="{" data-end="}">
+<div class="line"><a id="l00191" name="l00191"></a><span class="lineno"><a class="line" href="classSimpleTcpApp.html#acb8cc630b1c0aaa0bfd66496b13ee2e5">  191</a></span>  <span class="keywordtype">void</span> <a class="code hl_function" href="classSimpleTcpApp.html#acb8cc630b1c0aaa0bfd66496b13ee2e5">SendData</a>() {</div>
+<div class="line"><a id="l00192" name="l00192"></a><span class="lineno">  192</span>    Ptr&lt;Packet&gt; pkt = Create&lt;Packet&gt;((uint8_t*)<a class="code hl_variable" href="classSimpleTcpApp.html#a3f137007c2bc19765951c8179f7d8aed">m_payload</a>.c_str(), <a class="code hl_variable" href="classSimpleTcpApp.html#a3f137007c2bc19765951c8179f7d8aed">m_payload</a>.size());</div>
+<div class="line"><a id="l00193" name="l00193"></a><span class="lineno">  193</span>    <a class="code hl_variable" href="classSimpleTcpApp.html#af12a3641e0ff3291f4348c8a8bf19692">m_socket</a>-&gt;Send(pkt);</div>
+<div class="line"><a id="l00194" name="l00194"></a><span class="lineno">  194</span>  }</div>
+</div>
+<div class="line"><a id="l00195" name="l00195"></a><span class="lineno">  195</span> </div>
+<div class="foldopen" id="foldopen00196" data-start="{" data-end="}">
+<div class="line"><a id="l00196" name="l00196"></a><span class="lineno"><a class="line" href="classSimpleTcpApp.html#a1fb4e862a8b9abf9ddfcc0a372a6753c">  196</a></span>  <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code hl_function" href="classSimpleTcpApp.html#a1fb4e862a8b9abf9ddfcc0a372a6753c">StopApplication</a>() {</div>
+<div class="line"><a id="l00197" name="l00197"></a><span class="lineno">  197</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="classSimpleTcpApp.html#af12a3641e0ff3291f4348c8a8bf19692">m_socket</a>) <a class="code hl_variable" href="classSimpleTcpApp.html#af12a3641e0ff3291f4348c8a8bf19692">m_socket</a>-&gt;Close();</div>
+<div class="line"><a id="l00198" name="l00198"></a><span class="lineno">  198</span>  }</div>
+</div>
+<div class="line"><a id="l00199" name="l00199"></a><span class="lineno">  199</span> </div>
+<div class="line"><a id="l00200" name="l00200"></a><span class="lineno"><a class="line" href="classSimpleTcpApp.html#af12a3641e0ff3291f4348c8a8bf19692">  200</a></span>  Ptr&lt;Socket&gt; <a class="code hl_variable" href="classSimpleTcpApp.html#af12a3641e0ff3291f4348c8a8bf19692">m_socket</a>;</div>
+<div class="line"><a id="l00201" name="l00201"></a><span class="lineno"><a class="line" href="classSimpleTcpApp.html#a03a024a2d41f5a500d83e779322cbe38">  201</a></span>  Address <a class="code hl_variable" href="classSimpleTcpApp.html#a03a024a2d41f5a500d83e779322cbe38">m_peer</a>;</div>
+<div class="line"><a id="l00202" name="l00202"></a><span class="lineno"><a class="line" href="classSimpleTcpApp.html#a3f137007c2bc19765951c8179f7d8aed">  202</a></span>  std::string <a class="code hl_variable" href="classSimpleTcpApp.html#a3f137007c2bc19765951c8179f7d8aed">m_payload</a>;</div>
+<div class="line"><a id="l00203" name="l00203"></a><span class="lineno">  203</span>};</div>
+<div class="line"><a id="l00204" name="l00204"></a><span class="lineno">  204</span> </div>
+<div class="foldopen" id="foldopen00208" data-start="{" data-end="}">
+<div class="line"><a id="l00208" name="l00208"></a><span class="lineno"><a class="line" href="spoofing-mitigation_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">  208</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="spoofing-mitigation_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>* argv[]) {</div>
+<div class="line"><a id="l00209" name="l00209"></a><span class="lineno">  209</span>  <a class="code hl_function" href="classZtLogger.html#ab162532b5864fe679e2a333b1184fc56">ZtLogger::EnableTimestamps</a>(<span class="keyword">true</span>);</div>
+<div class="line"><a id="l00210" name="l00210"></a><span class="lineno">  210</span> </div>
+<div class="line"><a id="l00211" name="l00211"></a><span class="lineno">  211</span>  NodeContainer nodes;</div>
+<div class="line"><a id="l00212" name="l00212"></a><span class="lineno">  212</span>  nodes.Create(3); <span class="comment">// 0: sensor, 1: gateway, 2: attacker</span></div>
+<div class="line"><a id="l00213" name="l00213"></a><span class="lineno">  213</span> </div>
+<div class="line"><a id="l00214" name="l00214"></a><span class="lineno">  214</span>  PointToPointHelper p2p;</div>
+<div class="line"><a id="l00215" name="l00215"></a><span class="lineno">  215</span>  p2p.SetDeviceAttribute(<span class="stringliteral">&quot;DataRate&quot;</span>, StringValue(<span class="stringliteral">&quot;2Mbps&quot;</span>));</div>
+<div class="line"><a id="l00216" name="l00216"></a><span class="lineno">  216</span>  p2p.SetChannelAttribute(<span class="stringliteral">&quot;Delay&quot;</span>, StringValue(<span class="stringliteral">&quot;2ms&quot;</span>));</div>
+<div class="line"><a id="l00217" name="l00217"></a><span class="lineno">  217</span>  NetDeviceContainer d1 = p2p.Install(nodes.Get(0), nodes.Get(1));</div>
+<div class="line"><a id="l00218" name="l00218"></a><span class="lineno">  218</span>  NetDeviceContainer d2 = p2p.Install(nodes.Get(2), nodes.Get(1));</div>
+<div class="line"><a id="l00219" name="l00219"></a><span class="lineno">  219</span> </div>
+<div class="line"><a id="l00220" name="l00220"></a><span class="lineno">  220</span>  InternetStackHelper stack;</div>
+<div class="line"><a id="l00221" name="l00221"></a><span class="lineno">  221</span>  stack.Install(nodes);</div>
+<div class="line"><a id="l00222" name="l00222"></a><span class="lineno">  222</span> </div>
+<div class="line"><a id="l00223" name="l00223"></a><span class="lineno">  223</span>  Ipv4AddressHelper ip;</div>
+<div class="line"><a id="l00224" name="l00224"></a><span class="lineno">  224</span>  ip.SetBase(<span class="stringliteral">&quot;10.1.1.0&quot;</span>, <span class="stringliteral">&quot;255.255.255.0&quot;</span>);</div>
+<div class="line"><a id="l00225" name="l00225"></a><span class="lineno">  225</span>  Ipv4InterfaceContainer iface1 = ip.Assign(d1);</div>
+<div class="line"><a id="l00226" name="l00226"></a><span class="lineno">  226</span>  ip.SetBase(<span class="stringliteral">&quot;10.1.2.0&quot;</span>, <span class="stringliteral">&quot;255.255.255.0&quot;</span>);</div>
+<div class="line"><a id="l00227" name="l00227"></a><span class="lineno">  227</span>  Ipv4InterfaceContainer iface2 = ip.Assign(d2);</div>
+<div class="line"><a id="l00228" name="l00228"></a><span class="lineno">  228</span> </div>
+<div class="line"><a id="l00229" name="l00229"></a><span class="lineno">  229</span>  <span class="comment">// Zero Trust configuration</span></div>
+<div class="line"><a id="l00230" name="l00230"></a><span class="lineno">  230</span>  Ptr&lt;ZtPolicyEngine&gt; policy = CreateObject&lt;ZtPolicyEngine&gt;();</div>
+<div class="line"><a id="l00231" name="l00231"></a><span class="lineno">  231</span>  <a class="code hl_class" href="classCertificateAuthority.html">CertificateAuthority</a> <a class="code hl_variable" href="mitm-mitigation_8cc.html#a0f7fdc33aff583a214d0b889e93526e9">ca</a>;</div>
+<div class="line"><a id="l00232" name="l00232"></a><span class="lineno">  232</span>  Ptr&lt;ZtTlsHandshake&gt; <a class="code hl_variable" href="mitm-mitigation_8cc.html#adba57b7df483084cfe351903a33ea18a">handshake</a> = CreateObject&lt;ZtTlsHandshake&gt;();</div>
+<div class="line"><a id="l00233" name="l00233"></a><span class="lineno">  233</span>  policy-&gt;SetCaPublicKey(<a class="code hl_variable" href="mitm-mitigation_8cc.html#a0f7fdc33aff583a214d0b889e93526e9">ca</a>.<a class="code hl_function" href="classCertificateAuthority.html#a0a05c9cdb69916beeeca0332034205cd">GetPublicKey</a>());</div>
+<div class="line"><a id="l00234" name="l00234"></a><span class="lineno">  234</span>  policy-&gt;AddAuthorized(0, <span class="stringliteral">&quot;temp-sensor&quot;</span>);</div>
+<div class="line"><a id="l00235" name="l00235"></a><span class="lineno">  235</span> </div>
+<div class="line"><a id="l00236" name="l00236"></a><span class="lineno">  236</span>  <span class="comment">// Setup Gateway (secure sink)</span></div>
+<div class="line"><a id="l00237" name="l00237"></a><span class="lineno">  237</span>  Ptr&lt;SecureSinkApp&gt; sink = CreateObject&lt;SecureSinkApp&gt;();</div>
+<div class="line"><a id="l00238" name="l00238"></a><span class="lineno">  238</span>  sink-&gt;Setup(InetSocketAddress(Ipv4Address::GetAny(), 8080), policy, <a class="code hl_variable" href="mitm-mitigation_8cc.html#adba57b7df483084cfe351903a33ea18a">handshake</a>);</div>
+<div class="line"><a id="l00239" name="l00239"></a><span class="lineno">  239</span>  nodes.Get(1)-&gt;AddApplication(sink);</div>
+<div class="line"><a id="l00240" name="l00240"></a><span class="lineno">  240</span>  sink-&gt;SetStartTime(Seconds(0.0));</div>
+<div class="line"><a id="l00241" name="l00241"></a><span class="lineno">  241</span>  sink-&gt;SetStopTime(Seconds(20.0));</div>
+<div class="line"><a id="l00242" name="l00242"></a><span class="lineno">  242</span> </div>
+<div class="line"><a id="l00243" name="l00243"></a><span class="lineno">  243</span>  <span class="comment">// Setup Legitimate Sensor</span></div>
+<div class="line"><a id="l00244" name="l00244"></a><span class="lineno">  244</span>  Ptr&lt;SecureSensorApp&gt; sensor = CreateObject&lt;SecureSensorApp&gt;();</div>
+<div class="line"><a id="l00245" name="l00245"></a><span class="lineno">  245</span>  sensor-&gt;Setup(InetSocketAddress(iface1.GetAddress(1), 8080), 0, <span class="stringliteral">&quot;temp-sensor&quot;</span>, <span class="stringliteral">&quot;TEMP:22.5&quot;</span>, policy, &amp;<a class="code hl_variable" href="mitm-mitigation_8cc.html#a0f7fdc33aff583a214d0b889e93526e9">ca</a>, <a class="code hl_variable" href="mitm-mitigation_8cc.html#adba57b7df483084cfe351903a33ea18a">handshake</a>);</div>
+<div class="line"><a id="l00246" name="l00246"></a><span class="lineno">  246</span>  nodes.Get(0)-&gt;AddApplication(sensor);</div>
+<div class="line"><a id="l00247" name="l00247"></a><span class="lineno">  247</span>  sensor-&gt;SetStartTime(Seconds(1.0));</div>
+<div class="line"><a id="l00248" name="l00248"></a><span class="lineno">  248</span>  sensor-&gt;SetStopTime(Seconds(10.0));</div>
+<div class="line"><a id="l00249" name="l00249"></a><span class="lineno">  249</span> </div>
+<div class="line"><a id="l00250" name="l00250"></a><span class="lineno">  250</span>  <span class="comment">// Setup Attacker (unverified, garbage sender)</span></div>
+<div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>  Ptr&lt;SimpleTcpApp&gt; attacker = CreateObject&lt;SimpleTcpApp&gt;();</div>
+<div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>  attacker-&gt;Setup(InetSocketAddress(iface2.GetAddress(1), 8080), <span class="stringliteral">&quot;MALICIOUS#@garbage$&quot;</span>);</div>
+<div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>  nodes.Get(2)-&gt;AddApplication(attacker);</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>  attacker-&gt;SetStartTime(Seconds(3.0));</div>
+<div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>  attacker-&gt;SetStopTime(Seconds(10.0));</div>
+<div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
+<div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>  Simulator::Run();</div>
+<div class="line"><a id="l00258" name="l00258"></a><span class="lineno">  258</span>  Simulator::Destroy();</div>
+<div class="line"><a id="l00259" name="l00259"></a><span class="lineno">  259</span>  <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00260" name="l00260"></a><span class="lineno">  260</span>}</div>
+</div>
+<div class="line"><a id="l00261" name="l00261"></a><span class="lineno">  261</span> </div>
+<div class="ttc" id="aclassCertificateAuthority_html"><div class="ttname"><a href="classCertificateAuthority.html">CertificateAuthority</a></div><div class="ttdoc">Issues and signs certificates for Zero Trust identity validation.</div><div class="ttdef"><b>Definition</b> <a href="zt-certificate_8h_source.html#l00017">zt-certificate.h:17</a></div></div>
+<div class="ttc" id="aclassCertificateAuthority_html_a0a05c9cdb69916beeeca0332034205cd"><div class="ttname"><a href="classCertificateAuthority.html#a0a05c9cdb69916beeeca0332034205cd">CertificateAuthority::GetPublicKey</a></div><div class="ttdeci">CryptoPP::RSA::PublicKey GetPublicKey() const</div><div class="ttdoc">Retrieves the public RSA key of the CA.</div><div class="ttdef"><b>Definition</b> <a href="zt-certificate_8cc_source.html#l00052">zt-certificate.cc:52</a></div></div>
+<div class="ttc" id="aclassCertificateAuthority_html_af81edd447afd694376bb5e66d45bdd48"><div class="ttname"><a href="classCertificateAuthority.html#af81edd447afd694376bb5e66d45bdd48">CertificateAuthority::SignIdentity</a></div><div class="ttdeci">std::string SignIdentity(uint32_t nodeId, const std::string &amp;role, time_t expiry)</div><div class="ttdoc">Signs an identity certificate with node ID, role, and expiry.</div><div class="ttdef"><b>Definition</b> <a href="zt-certificate_8cc_source.html#l00029">zt-certificate.cc:29</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html"><div class="ttname"><a href="classSecureSensorApp.html">SecureSensorApp</a></div><div class="ttdoc">Secure TCP-based sensor application that sends encrypted data after Zero Trust handshake and certific...</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00020">spoofing-mitigation.cc:20</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_a05e3604df4cc65de733f672b33e33ee5"><div class="ttname"><a href="classSecureSensorApp.html#a05e3604df4cc65de733f672b33e33ee5">SecureSensorApp::StartApplication</a></div><div class="ttdeci">virtual void StartApplication()</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00044">spoofing-mitigation.cc:44</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_a1d3deb9790e41159962a822c7a6b0eef"><div class="ttname"><a href="classSecureSensorApp.html#a1d3deb9790e41159962a822c7a6b0eef">SecureSensorApp::handshake</a></div><div class="ttdeci">Ptr&lt; ZtTlsHandshake &gt; handshake</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00081">spoofing-mitigation.cc:81</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_a3ca46d4a71deba9eb31061718dd1a6ce"><div class="ttname"><a href="classSecureSensorApp.html#a3ca46d4a71deba9eb31061718dd1a6ce">SecureSensorApp::peer</a></div><div class="ttdeci">Address peer</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00076">spoofing-mitigation.cc:76</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_a3df20051bf85631835f6462da6859601"><div class="ttname"><a href="classSecureSensorApp.html#a3df20051bf85631835f6462da6859601">SecureSensorApp::zt</a></div><div class="ttdeci">Ptr&lt; ZtPolicyEngine &gt; zt</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00079">spoofing-mitigation.cc:79</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_a78f7eb7c9d08f1acf964f54d39d73ecf"><div class="ttname"><a href="classSecureSensorApp.html#a78f7eb7c9d08f1acf964f54d39d73ecf">SecureSensorApp::ca</a></div><div class="ttdeci">CertificateAuthority * ca</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00080">spoofing-mitigation.cc:80</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_a92049d4b4f9045eeedb25671a4307cef"><div class="ttname"><a href="classSecureSensorApp.html#a92049d4b4f9045eeedb25671a4307cef">SecureSensorApp::nid</a></div><div class="ttdeci">uint32_t nid</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00077">spoofing-mitigation.cc:77</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_aa3a00be6f3541e51b05f69930ca09af5"><div class="ttname"><a href="classSecureSensorApp.html#aa3a00be6f3541e51b05f69930ca09af5">SecureSensorApp::role</a></div><div class="ttdeci">std::string role</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00078">spoofing-mitigation.cc:78</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_aa40fcfbe17060b33a47f2714a5c0e875"><div class="ttname"><a href="classSecureSensorApp.html#aa40fcfbe17060b33a47f2714a5c0e875">SecureSensorApp::socket</a></div><div class="ttdeci">Ptr&lt; Socket &gt; socket</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00075">spoofing-mitigation.cc:75</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_abcf992d1e14b78f97e8755ee1cd7537a"><div class="ttname"><a href="classSecureSensorApp.html#abcf992d1e14b78f97e8755ee1cd7537a">SecureSensorApp::SendEncrypted</a></div><div class="ttdeci">void SendEncrypted()</div><div class="ttdoc">Encrypt and send sensor data using session key.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00061">spoofing-mitigation.cc:61</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_aca00efa16cbeee454347da5c884cda5a"><div class="ttname"><a href="classSecureSensorApp.html#aca00efa16cbeee454347da5c884cda5a">SecureSensorApp::StopApplication</a></div><div class="ttdeci">virtual void StopApplication()</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00071">spoofing-mitigation.cc:71</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_af97fd5381349b5639eda93f738f9db31"><div class="ttname"><a href="classSecureSensorApp.html#af97fd5381349b5639eda93f738f9db31">SecureSensorApp::sensorData</a></div><div class="ttdeci">std::string sensorData</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00078">spoofing-mitigation.cc:78</a></div></div>
+<div class="ttc" id="aclassSecureSensorApp_html_aff04560ef27ffefaa1da1330c797d13b"><div class="ttname"><a href="classSecureSensorApp.html#aff04560ef27ffefaa1da1330c797d13b">SecureSensorApp::Setup</a></div><div class="ttdeci">void Setup(Address peerAddr, uint32_t nodeId, std::string role, std::string sensorData, Ptr&lt; ZtPolicyEngine &gt; policy, CertificateAuthority *ca, Ptr&lt; ZtTlsHandshake &gt; handshake)</div><div class="ttdoc">Configure the sensor application.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00032">spoofing-mitigation.cc:32</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html"><div class="ttname"><a href="classSecureSinkApp.html">SecureSinkApp</a></div><div class="ttdoc">Secure receiver (gateway) that authorizes senders and decrypts valid messages.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00087">spoofing-mitigation.cc:87</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_a3a672bd05d4399036c2f7fe92c205962"><div class="ttname"><a href="classSecureSinkApp.html#a3a672bd05d4399036c2f7fe92c205962">SecureSinkApp::HandleRead</a></div><div class="ttdeci">void HandleRead(Ptr&lt; Socket &gt; s)</div><div class="ttdoc">Handle incoming packets, validate certificate, and decrypt authorized data.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00117">spoofing-mitigation.cc:117</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_a5ee6aadf29ff1a4560e160520bba0030"><div class="ttname"><a href="classSecureSinkApp.html#a5ee6aadf29ff1a4560e160520bba0030">SecureSinkApp::HandleAccept</a></div><div class="ttdeci">void HandleAccept(Ptr&lt; Socket &gt; s, const Address &amp;)</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00110">spoofing-mitigation.cc:110</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_a6fbcd6cddb49925547ecc659e403e36e"><div class="ttname"><a href="classSecureSinkApp.html#a6fbcd6cddb49925547ecc659e403e36e">SecureSinkApp::StopApplication</a></div><div class="ttdeci">virtual void StopApplication()</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00158">spoofing-mitigation.cc:158</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_a8db44439bae9c0ec9726c4922aa3c9e8"><div class="ttname"><a href="classSecureSinkApp.html#a8db44439bae9c0ec9726c4922aa3c9e8">SecureSinkApp::handshake</a></div><div class="ttdeci">Ptr&lt; ZtTlsHandshake &gt; handshake</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00165">spoofing-mitigation.cc:165</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_a9c321e1ffae7219abb364b0e4de2d160"><div class="ttname"><a href="classSecureSinkApp.html#a9c321e1ffae7219abb364b0e4de2d160">SecureSinkApp::Setup</a></div><div class="ttdeci">void Setup(Address listen, Ptr&lt; ZtPolicyEngine &gt; policy, Ptr&lt; ZtTlsHandshake &gt; handshake)</div><div class="ttdoc">Setup receiver application with policy engine and TLS handshake support.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00095">spoofing-mitigation.cc:95</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_aa3918e2fe7f8eb9187e6abc79180abb3"><div class="ttname"><a href="classSecureSinkApp.html#aa3918e2fe7f8eb9187e6abc79180abb3">SecureSinkApp::local</a></div><div class="ttdeci">Address local</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00163">spoofing-mitigation.cc:163</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_aad35d3ba3bac4b3051e8624d92ae0e2e"><div class="ttname"><a href="classSecureSinkApp.html#aad35d3ba3bac4b3051e8624d92ae0e2e">SecureSinkApp::authorized</a></div><div class="ttdeci">std::map&lt; uint32_t, bool &gt; authorized</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00166">spoofing-mitigation.cc:166</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_abf50860b7894bb7e97283d2a5e3e5132"><div class="ttname"><a href="classSecureSinkApp.html#abf50860b7894bb7e97283d2a5e3e5132">SecureSinkApp::socket</a></div><div class="ttdeci">Ptr&lt; Socket &gt; socket</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00162">spoofing-mitigation.cc:162</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_ac45868eb53a9a2e9d12e46f355731811"><div class="ttname"><a href="classSecureSinkApp.html#ac45868eb53a9a2e9d12e46f355731811">SecureSinkApp::StartApplication</a></div><div class="ttdeci">virtual void StartApplication()</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00102">spoofing-mitigation.cc:102</a></div></div>
+<div class="ttc" id="aclassSecureSinkApp_html_afe35fe0e5fe4f0e2860b265b9e3f0d79"><div class="ttname"><a href="classSecureSinkApp.html#afe35fe0e5fe4f0e2860b265b9e3f0d79">SecureSinkApp::zt</a></div><div class="ttdeci">Ptr&lt; ZtPolicyEngine &gt; zt</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00164">spoofing-mitigation.cc:164</a></div></div>
+<div class="ttc" id="aclassSimpleTcpApp_html"><div class="ttname"><a href="classSimpleTcpApp.html">SimpleTcpApp</a></div><div class="ttdoc">Simple untrusted TCP application used by attacker to send garbage payloads.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-attack_8cc_source.html#l00026">spoofing-attack.cc:26</a></div></div>
+<div class="ttc" id="aclassSimpleTcpApp_html_a03a024a2d41f5a500d83e779322cbe38"><div class="ttname"><a href="classSimpleTcpApp.html#a03a024a2d41f5a500d83e779322cbe38">SimpleTcpApp::m_peer</a></div><div class="ttdeci">Address m_peer</div><div class="ttdoc">Destination address.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00201">spoofing-mitigation.cc:201</a></div></div>
+<div class="ttc" id="aclassSimpleTcpApp_html_a1fb4e862a8b9abf9ddfcc0a372a6753c"><div class="ttname"><a href="classSimpleTcpApp.html#a1fb4e862a8b9abf9ddfcc0a372a6753c">SimpleTcpApp::StopApplication</a></div><div class="ttdeci">virtual void StopApplication()</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00196">spoofing-mitigation.cc:196</a></div></div>
+<div class="ttc" id="aclassSimpleTcpApp_html_a35ac6987593d5121284b8991930c8fd3"><div class="ttname"><a href="classSimpleTcpApp.html#a35ac6987593d5121284b8991930c8fd3">SimpleTcpApp::Setup</a></div><div class="ttdeci">void Setup(Address address, std::string payload)</div><div class="ttdoc">Configure attacker app.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00179">spoofing-mitigation.cc:179</a></div></div>
+<div class="ttc" id="aclassSimpleTcpApp_html_a3f137007c2bc19765951c8179f7d8aed"><div class="ttname"><a href="classSimpleTcpApp.html#a3f137007c2bc19765951c8179f7d8aed">SimpleTcpApp::m_payload</a></div><div class="ttdeci">std::string m_payload</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00202">spoofing-mitigation.cc:202</a></div></div>
+<div class="ttc" id="aclassSimpleTcpApp_html_a6180b0138ed1f42886c750b04e2d73c3"><div class="ttname"><a href="classSimpleTcpApp.html#a6180b0138ed1f42886c750b04e2d73c3">SimpleTcpApp::StartApplication</a></div><div class="ttdeci">virtual void StartApplication()</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00185">spoofing-mitigation.cc:185</a></div></div>
+<div class="ttc" id="aclassSimpleTcpApp_html_acb8cc630b1c0aaa0bfd66496b13ee2e5"><div class="ttname"><a href="classSimpleTcpApp.html#acb8cc630b1c0aaa0bfd66496b13ee2e5">SimpleTcpApp::SendData</a></div><div class="ttdeci">void SendData()</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00191">spoofing-mitigation.cc:191</a></div></div>
+<div class="ttc" id="aclassSimpleTcpApp_html_af12a3641e0ff3291f4348c8a8bf19692"><div class="ttname"><a href="classSimpleTcpApp.html#af12a3641e0ff3291f4348c8a8bf19692">SimpleTcpApp::m_socket</a></div><div class="ttdeci">Ptr&lt; Socket &gt; m_socket</div><div class="ttdoc">TCP socket used by the app.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00200">spoofing-mitigation.cc:200</a></div></div>
+<div class="ttc" id="aclassZtLogger_html_a467e70148db6fc7fb134e1fa7496ca35"><div class="ttname"><a href="classZtLogger.html#a467e70148db6fc7fb134e1fa7496ca35">ZtLogger::LogCertIssued</a></div><div class="ttdeci">static void LogCertIssued(uint32_t nodeId, const std::string &amp;role, time_t expiry)</div><div class="ttdoc">Logs a certificate issuance event.</div><div class="ttdef"><b>Definition</b> <a href="zt-logger_8cc_source.html#l00046">zt-logger.cc:46</a></div></div>
+<div class="ttc" id="aclassZtLogger_html_a707c469faa37ed9db73c2183097b6dfb"><div class="ttname"><a href="classZtLogger.html#a707c469faa37ed9db73c2183097b6dfb">ZtLogger::LogDecryption</a></div><div class="ttdeci">static void LogDecryption(const std::string &amp;payload)</div><div class="ttdoc">Logs a successful decryption event.</div><div class="ttdef"><b>Definition</b> <a href="zt-logger_8cc_source.html#l00094">zt-logger.cc:94</a></div></div>
+<div class="ttc" id="aclassZtLogger_html_a7cb7af75ab16a0546537b47c0ca9c72c"><div class="ttname"><a href="classZtLogger.html#a7cb7af75ab16a0546537b47c0ca9c72c">ZtLogger::LogCertValidationResult</a></div><div class="ttdeci">static void LogCertValidationResult(uint32_t nodeId, bool valid)</div><div class="ttdoc">Logs the result of certificate validation.</div><div class="ttdef"><b>Definition</b> <a href="zt-logger_8cc_source.html#l00058">zt-logger.cc:58</a></div></div>
+<div class="ttc" id="aclassZtLogger_html_aacf37e88e6a7076e227056e8d64f9876"><div class="ttname"><a href="classZtLogger.html#aacf37e88e6a7076e227056e8d64f9876">ZtLogger::LogDecryptionFailure</a></div><div class="ttdeci">static void LogDecryptionFailure()</div><div class="ttdoc">Logs a decryption failure event.</div><div class="ttdef"><b>Definition</b> <a href="zt-logger_8cc_source.html#l00101">zt-logger.cc:101</a></div></div>
+<div class="ttc" id="aclassZtLogger_html_ab162532b5864fe679e2a333b1184fc56"><div class="ttname"><a href="classZtLogger.html#ab162532b5864fe679e2a333b1184fc56">ZtLogger::EnableTimestamps</a></div><div class="ttdeci">static void EnableTimestamps(bool enable)</div><div class="ttdoc">Enables or disables timestamp logging.</div><div class="ttdef"><b>Definition</b> <a href="zt-logger_8cc_source.html#l00016">zt-logger.cc:16</a></div></div>
+<div class="ttc" id="aclassZtLogger_html_ab4743f29e35568cb7e4652d3b012061d"><div class="ttname"><a href="classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d">ZtLogger::Log</a></div><div class="ttdeci">static void Log(const std::string &amp;tag, const std::string &amp;message)</div><div class="ttdoc">Logs a general message with a specified tag.</div><div class="ttdef"><b>Definition</b> <a href="zt-logger_8cc_source.html#l00025">zt-logger.cc:25</a></div></div>
+<div class="ttc" id="aclassZtLogger_html_ac3f4de629944eec6b0befaf1fcbdce7d"><div class="ttname"><a href="classZtLogger.html#ac3f4de629944eec6b0befaf1fcbdce7d">ZtLogger::LogEncryption</a></div><div class="ttdeci">static void LogEncryption(const std::string &amp;payload, const std::string &amp;ivHex)</div><div class="ttdoc">Logs an encryption event with payload and IV.</div><div class="ttdef"><b>Definition</b> <a href="zt-logger_8cc_source.html#l00086">zt-logger.cc:86</a></div></div>
+<div class="ttc" id="amitm-mitigation_8cc_html_a0f7fdc33aff583a214d0b889e93526e9"><div class="ttname"><a href="mitm-mitigation_8cc.html#a0f7fdc33aff583a214d0b889e93526e9">ca</a></div><div class="ttdeci">CertificateAuthority ca</div><div class="ttdoc">Certificate authority for signing identity certificates.</div><div class="ttdef"><b>Definition</b> <a href="mitm-mitigation_8cc_source.html#l00028">mitm-mitigation.cc:28</a></div></div>
+<div class="ttc" id="amitm-mitigation_8cc_html_adba57b7df483084cfe351903a33ea18a"><div class="ttname"><a href="mitm-mitigation_8cc.html#adba57b7df483084cfe351903a33ea18a">handshake</a></div><div class="ttdeci">Ptr&lt; ZtTlsHandshake &gt; handshake</div><div class="ttdoc">TLS handshake manager for establishing secure sessions.</div><div class="ttdef"><b>Definition</b> <a href="mitm-mitigation_8cc_source.html#l00022">mitm-mitigation.cc:22</a></div></div>
+<div class="ttc" id="anamespacens3_html"><div class="ttname"><a href="namespacens3.html">ns3</a></div><div class="ttdef"><b>Definition</b> <a href="zt-encryption-utils_8cc_source.html#l00010">zt-encryption-utils.cc:10</a></div></div>
+<div class="ttc" id="anamespacens3_html_a15964bad59df770e70c1efa2be78b7fb"><div class="ttname"><a href="namespacens3.html#a15964bad59df770e70c1efa2be78b7fb">ns3::EncryptPayload</a></div><div class="ttdeci">std::string EncryptPayload(const std::string &amp;data, const byte *key, std::string &amp;ivOut)</div><div class="ttdoc">Encrypts a plaintext string using AES-CBC mode with a randomly generated IV.</div><div class="ttdef"><b>Definition</b> <a href="zt-encryption-utils_8cc_source.html#l00022">zt-encryption-utils.cc:22</a></div></div>
+<div class="ttc" id="anamespacens3_html_aa5c1b03e21921c7c1fabc7602f96b230"><div class="ttname"><a href="namespacens3.html#aa5c1b03e21921c7c1fabc7602f96b230">ns3::HexToBytes</a></div><div class="ttdeci">std::vector&lt; CryptoPP::byte &gt; HexToBytes(const std::string &amp;hex)</div><div class="ttdoc">Converts a hexadecimal string into a byte vector.</div><div class="ttdef"><b>Definition</b> <a href="zt-encryption-utils_8cc_source.html#l00084">zt-encryption-utils.cc:84</a></div></div>
+<div class="ttc" id="anamespacens3_html_abcc9f927462e02351cf483e484c8eac0"><div class="ttname"><a href="namespacens3.html#abcc9f927462e02351cf483e484c8eac0">ns3::DecryptPayload</a></div><div class="ttdeci">std::string DecryptPayload(const std::string &amp;cipher, const byte *key)</div><div class="ttdoc">Decrypts a ciphertext string encrypted with EncryptPayload.</div><div class="ttdef"><b>Definition</b> <a href="zt-encryption-utils_8cc_source.html#l00048">zt-encryption-utils.cc:48</a></div></div>
+<div class="ttc" id="aspoofing-mitigation_8cc_html_a0ddf1224851353fc92bfbff6f499fa97"><div class="ttname"><a href="spoofing-mitigation_8cc.html#a0ddf1224851353fc92bfbff6f499fa97">main</a></div><div class="ttdeci">int main(int argc, char *argv[])</div><div class="ttdoc">Main function to simulate spoofing attack with Zero Trust defense.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-mitigation_8cc_source.html#l00208">spoofing-mitigation.cc:208</a></div></div>
+<div class="ttc" id="aspoofing-mitigation_8cc_html_ab95ca354f9c6b073f684ff8077deca38"><div class="ttname"><a href="spoofing-mitigation_8cc.html#ab95ca354f9c6b073f684ff8077deca38">NS_LOG_COMPONENT_DEFINE</a></div><div class="ttdeci">NS_LOG_COMPONENT_DEFINE(&quot;SpoofingMitigated&quot;)</div></div>
+</div><!-- fragment --></div><!-- contents -->
+</div><!-- doc-content -->

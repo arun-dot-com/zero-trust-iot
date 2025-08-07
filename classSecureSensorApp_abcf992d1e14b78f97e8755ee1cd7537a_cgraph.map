@@ -1,0 +1,11 @@
+<map id="SecureSensorApp::SendEncrypted" name="SecureSensorApp::SendEncrypted">
+<area shape="rect" id="Node000001" title="Encrypt and send sensor data using session key." alt="" coords="5,55,245,80"/>
+<area shape="rect" id="Node000002" href="$namespacens3.html#a15964bad59df770e70c1efa2be78b7fb" title="Encrypts a plaintext string using AES&#45;CBC mode with a randomly generated IV." alt="" coords="307,5,460,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="192,52,302,31,303,36,193,57"/>
+<area shape="rect" id="Node000003" href="$namespacens3.html#aa5c1b03e21921c7c1fabc7602f96b230" title="Converts a hexadecimal string into a byte vector." alt="" coords="318,55,449,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="245,65,304,65,304,70,245,70"/>
+<area shape="rect" id="Node000004" href="$classZtLogger.html#ac3f4de629944eec6b0befaf1fcbdce7d" title="Logs an encryption event with payload and IV." alt="" coords="293,104,473,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="193,77,303,99,302,104,192,83"/>
+<area shape="rect" id="Node000005" href="$classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d" title="Logs a general message with a specified tag." alt="" coords="521,104,632,129"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="474,114,508,114,508,119,474,119"/>
+</map>

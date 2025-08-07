@@ -1,0 +1,6 @@
+<map id="SecureSensorApp" name="SecureSensorApp">
+<area shape="rect" id="Node000001" title="Secure TCP&#45;based sensor application that sends encrypted data after Zero Trust handshake and certific..." alt="" coords="5,119,148,524"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="33,5,120,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,85,71,118,66,118,67,84"/>
+<area shape="poly" id="edge2_Node000001_Node000002" title=" " alt="" coords="86,84,88,118,82,118,81,85"/>
+</map>

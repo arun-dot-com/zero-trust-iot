@@ -1,0 +1,9 @@
+<map id="ReceiveAtGateway" name="ReceiveAtGateway">
+<area shape="rect" id="Node000001" title="Receives an encrypted packet at the gateway and performs decryption and validation." alt="" coords="5,55,152,80"/>
+<area shape="rect" id="Node000002" href="$namespacens3.html#abcc9f927462e02351cf483e484c8eac0" title="Decrypts a ciphertext string encrypted with EncryptPayload." alt="" coords="200,5,355,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="130,52,212,31,213,37,131,57"/>
+<area shape="rect" id="Node000003" href="$namespacens3.html#af9b3b1642d0cadbd7ff0948f32fb14a3" title="Decodes a hex&#45;encoded AES key string into a raw key byte block." alt="" coords="201,55,353,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="152,65,188,65,188,70,152,70"/>
+<area shape="rect" id="Node000004" href="$classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d" title="Logs a general message with a specified tag." alt="" coords="222,104,333,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="131,77,213,98,212,103,130,83"/>
+</map>

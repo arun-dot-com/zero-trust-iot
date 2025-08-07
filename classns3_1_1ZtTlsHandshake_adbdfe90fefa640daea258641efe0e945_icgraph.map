@@ -1,0 +1,5 @@
+<map id="ns3::ZtTlsHandshake::Log" name="ns3::ZtTlsHandshake::Log">
+<area shape="rect" id="Node000001" title="Emit a log message using the external logger or NS_LOG fallback." alt="" coords="212,13,401,38"/>
+<area shape="rect" id="Node000002" href="$classns3_1_1ZtTlsHandshake.html#a29042c5c4785e838b79645942545f92f" title="Start a simulated TLS handshake between client and server nodes." alt="" coords="5,5,164,45"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="198,28,164,28,164,23,198,23"/>
+</map>

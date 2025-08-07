@@ -1,0 +1,473 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Zero Trust IoT library: TcpReceiver Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/the-ns3-programmer/zero-trust-iot" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="zero-trust-iot.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zero Trust IoT library
+   </div>
+<div style="position: fixed; top: 1rem; right: 4rem; z-index: 1000; background-color: #eee; padding: 0.5rem; border-radius: 5px; cursor: pointer;">
+  <doxygen-awesome-dark-mode-toggle title="Toggle Light/Dark Mode" id="theme-toggle"></doxygen-awesome-dark-mode-toggle>
+</div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Force re-render of the component after load
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      // Trigger internal update by toggling the mode briefly
+      setTimeout(() => {
+        toggle.dispatchEvent(new Event('click'));
+        toggle.dispatchEvent(new Event('click'));
+      }, 10);
+    }
+  });
+</script>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classTcpReceiver.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">TcpReceiver Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>A simple TCP server application that receives and logs incoming messages.  
+ <a href="classTcpReceiver.html#details">More...</a></p>
+<div class="dynheader">
+Inheritance diagram for TcpReceiver:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classTcpReceiver__inherit__graph.svg" width="154" height="290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for TcpReceiver:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classTcpReceiver__coll__graph.svg" width="154" height="290"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a42b18d447c15746a784732bd1b297759" id="r_a42b18d447c15746a784732bd1b297759"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTcpReceiver.html#a42b18d447c15746a784732bd1b297759">Setup</a> (Address listen)</td></tr>
+<tr class="memdesc:a42b18d447c15746a784732bd1b297759"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the address on which the receiver should listen.  <br /></td></tr>
+<tr class="separator:a42b18d447c15746a784732bd1b297759"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a7af928b938a88ebbf3d5ac3f0fca0fca" id="r_a7af928b938a88ebbf3d5ac3f0fca0fca"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTcpReceiver.html#a7af928b938a88ebbf3d5ac3f0fca0fca">StartApplication</a> ()</td></tr>
+<tr class="memdesc:a7af928b938a88ebbf3d5ac3f0fca0fca"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the application starts. Binds and listens on the socket.  <br /></td></tr>
+<tr class="separator:a7af928b938a88ebbf3d5ac3f0fca0fca"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd2527568f8c5e444bbae5c5f9fd0f66" id="r_abd2527568f8c5e444bbae5c5f9fd0f66"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTcpReceiver.html#abd2527568f8c5e444bbae5c5f9fd0f66">HandleAccept</a> (Ptr&lt; Socket &gt; s, const Address &amp;address)</td></tr>
+<tr class="memdesc:abd2527568f8c5e444bbae5c5f9fd0f66"><td class="mdescLeft">&#160;</td><td class="mdescRight">Accepts a new incoming connection.  <br /></td></tr>
+<tr class="separator:abd2527568f8c5e444bbae5c5f9fd0f66"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dc942659af18849e7f40413a67ba4dd" id="r_a7dc942659af18849e7f40413a67ba4dd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTcpReceiver.html#a7dc942659af18849e7f40413a67ba4dd">HandleRead</a> (Ptr&lt; Socket &gt; s)</td></tr>
+<tr class="memdesc:a7dc942659af18849e7f40413a67ba4dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reads incoming data and logs it.  <br /></td></tr>
+<tr class="separator:a7dc942659af18849e7f40413a67ba4dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a23c2d88af57f33ce31db6d0c6d126ad3" id="r_a23c2d88af57f33ce31db6d0c6d126ad3"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTcpReceiver.html#a23c2d88af57f33ce31db6d0c6d126ad3">StopApplication</a> ()</td></tr>
+<tr class="memdesc:a23c2d88af57f33ce31db6d0c6d126ad3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the application stops. Closes the socket.  <br /></td></tr>
+<tr class="separator:a23c2d88af57f33ce31db6d0c6d126ad3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:a49ecc11e49c68e849982869d911287cf" id="r_a49ecc11e49c68e849982869d911287cf"><td class="memItemLeft" align="right" valign="top">Ptr&lt; Socket &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTcpReceiver.html#a49ecc11e49c68e849982869d911287cf">socket</a></td></tr>
+<tr class="memdesc:a49ecc11e49c68e849982869d911287cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">TCP server socket.  <br /></td></tr>
+<tr class="separator:a49ecc11e49c68e849982869d911287cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a241dbcee7d8cf80fea6ad0daff803daa" id="r_a241dbcee7d8cf80fea6ad0daff803daa"><td class="memItemLeft" align="right" valign="top">Address&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classTcpReceiver.html#a241dbcee7d8cf80fea6ad0daff803daa">local</a></td></tr>
+<tr class="memdesc:a241dbcee7d8cf80fea6ad0daff803daa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Address to listen on.  <br /></td></tr>
+<tr class="separator:a241dbcee7d8cf80fea6ad0daff803daa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>A simple TCP server application that receives and logs incoming messages. </p>
+<p>Acts as the gateway receiving messages from both legitimate and spoofed sources. </p>
+
+<p class="definition">Definition at line <a class="el" href="spoofing-attack_8cc_source.html#l00082">82</a> of file <a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a>.</p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="abd2527568f8c5e444bbae5c5f9fd0f66" name="abd2527568f8c5e444bbae5c5f9fd0f66"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd2527568f8c5e444bbae5c5f9fd0f66">&#9670;&#160;</a></span>HandleAccept()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TcpReceiver::HandleAccept </td>
+          <td>(</td>
+          <td class="paramtype">Ptr&lt; Socket &gt;&#160;</td>
+          <td class="paramname"><em>s</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const Address &amp;&#160;</td>
+          <td class="paramname"><em>address</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Accepts a new incoming connection. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The accepted socket. </td></tr>
+    <tr><td class="paramname">address</td><td>The remote address (not used). </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="spoofing-attack_8cc_source.html#l00130">130</a> of file <a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>                                                             {</div>
+<div class="line"><span class="lineno">  131</span>  s-&gt;SetRecvCallback(MakeCallback(&amp;<a class="code hl_function" href="classTcpReceiver.html#a7dc942659af18849e7f40413a67ba4dd">TcpReceiver::HandleRead</a>, <span class="keyword">this</span>));</div>
+<div class="line"><span class="lineno">  132</span>}</div>
+<div class="ttc" id="aclassTcpReceiver_html_a7dc942659af18849e7f40413a67ba4dd"><div class="ttname"><a href="classTcpReceiver.html#a7dc942659af18849e7f40413a67ba4dd">TcpReceiver::HandleRead</a></div><div class="ttdeci">void HandleRead(Ptr&lt; Socket &gt; s)</div><div class="ttdoc">Reads incoming data and logs it.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-attack_8cc_source.html#l00134">spoofing-attack.cc:134</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classTcpReceiver_abd2527568f8c5e444bbae5c5f9fd0f66_cgraph.svg" width="444" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classTcpReceiver_abd2527568f8c5e444bbae5c5f9fd0f66_icgraph.svg" width="470" height="36"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a7dc942659af18849e7f40413a67ba4dd" name="a7dc942659af18849e7f40413a67ba4dd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7dc942659af18849e7f40413a67ba4dd">&#9670;&#160;</a></span>HandleRead()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TcpReceiver::HandleRead </td>
+          <td>(</td>
+          <td class="paramtype">Ptr&lt; Socket &gt;&#160;</td>
+          <td class="paramname"><em>s</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Reads incoming data and logs it. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">s</td><td>The socket from which to receive data. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="spoofing-attack_8cc_source.html#l00134">134</a> of file <a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  134</span>                                          {</div>
+<div class="line"><span class="lineno">  135</span>  <span class="keywordflow">while</span> (Ptr&lt;Packet&gt; packet = s-&gt;Recv()) {</div>
+<div class="line"><span class="lineno">  136</span>    uint32_t len = packet-&gt;GetSize();</div>
+<div class="line"><span class="lineno">  137</span>    uint8_t *buffer = <span class="keyword">new</span> uint8_t[len];</div>
+<div class="line"><span class="lineno">  138</span>    packet-&gt;CopyData(buffer, len);</div>
+<div class="line"><span class="lineno">  139</span>    std::string received((<span class="keywordtype">char</span>*)buffer, len);</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keyword">delete</span>[] buffer;</div>
+<div class="line"><span class="lineno">  141</span>    NS_LOG_UNCOND(<span class="stringliteral">&quot;[Gateway] Received: &quot;</span> &lt;&lt; received);</div>
+<div class="line"><span class="lineno">  142</span>  }</div>
+<div class="line"><span class="lineno">  143</span>}</div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classTcpReceiver_a7dc942659af18849e7f40413a67ba4dd_icgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a42b18d447c15746a784732bd1b297759" name="a42b18d447c15746a784732bd1b297759"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a42b18d447c15746a784732bd1b297759">&#9670;&#160;</a></span>Setup()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TcpReceiver::Setup </td>
+          <td>(</td>
+          <td class="paramtype">Address&#160;</td>
+          <td class="paramname"><em>listen</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets the address on which the receiver should listen. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">listen</td><td>The address to bind and listen on. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="spoofing-attack_8cc_source.html#l00118">118</a> of file <a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  118</span>                                      {</div>
+<div class="line"><span class="lineno">  119</span>  <a class="code hl_variable" href="classTcpReceiver.html#a241dbcee7d8cf80fea6ad0daff803daa">local</a> = listen;</div>
+<div class="line"><span class="lineno">  120</span>}</div>
+<div class="ttc" id="aclassTcpReceiver_html_a241dbcee7d8cf80fea6ad0daff803daa"><div class="ttname"><a href="classTcpReceiver.html#a241dbcee7d8cf80fea6ad0daff803daa">TcpReceiver::local</a></div><div class="ttdeci">Address local</div><div class="ttdoc">Address to listen on.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-attack_8cc_source.html#l00115">spoofing-attack.cc:115</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a7af928b938a88ebbf3d5ac3f0fca0fca" name="a7af928b938a88ebbf3d5ac3f0fca0fca"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7af928b938a88ebbf3d5ac3f0fca0fca">&#9670;&#160;</a></span>StartApplication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TcpReceiver::StartApplication </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the application starts. Binds and listens on the socket. </p>
+
+<p class="definition">Definition at line <a class="el" href="spoofing-attack_8cc_source.html#l00122">122</a> of file <a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  122</span>                                   {</div>
+<div class="line"><span class="lineno">  123</span>  <a class="code hl_variable" href="classTcpReceiver.html#a49ecc11e49c68e849982869d911287cf">socket</a> = Socket::CreateSocket(GetNode(), TcpSocketFactory::GetTypeId());</div>
+<div class="line"><span class="lineno">  124</span>  <a class="code hl_variable" href="classTcpReceiver.html#a49ecc11e49c68e849982869d911287cf">socket</a>-&gt;Bind(<a class="code hl_variable" href="classTcpReceiver.html#a241dbcee7d8cf80fea6ad0daff803daa">local</a>);</div>
+<div class="line"><span class="lineno">  125</span>  <a class="code hl_variable" href="classTcpReceiver.html#a49ecc11e49c68e849982869d911287cf">socket</a>-&gt;Listen();</div>
+<div class="line"><span class="lineno">  126</span>  <a class="code hl_variable" href="classTcpReceiver.html#a49ecc11e49c68e849982869d911287cf">socket</a>-&gt;SetAcceptCallback(MakeNullCallback&lt;<span class="keywordtype">bool</span>, Ptr&lt;Socket&gt;, <span class="keyword">const</span> Address&amp;&gt;(),</div>
+<div class="line"><span class="lineno">  127</span>                            MakeCallback(&amp;<a class="code hl_function" href="classTcpReceiver.html#abd2527568f8c5e444bbae5c5f9fd0f66">TcpReceiver::HandleAccept</a>, <span class="keyword">this</span>));</div>
+<div class="line"><span class="lineno">  128</span>}</div>
+<div class="ttc" id="aclassTcpReceiver_html_a49ecc11e49c68e849982869d911287cf"><div class="ttname"><a href="classTcpReceiver.html#a49ecc11e49c68e849982869d911287cf">TcpReceiver::socket</a></div><div class="ttdeci">Ptr&lt; Socket &gt; socket</div><div class="ttdoc">TCP server socket.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-attack_8cc_source.html#l00114">spoofing-attack.cc:114</a></div></div>
+<div class="ttc" id="aclassTcpReceiver_html_abd2527568f8c5e444bbae5c5f9fd0f66"><div class="ttname"><a href="classTcpReceiver.html#abd2527568f8c5e444bbae5c5f9fd0f66">TcpReceiver::HandleAccept</a></div><div class="ttdeci">void HandleAccept(Ptr&lt; Socket &gt; s, const Address &amp;address)</div><div class="ttdoc">Accepts a new incoming connection.</div><div class="ttdef"><b>Definition</b> <a href="spoofing-attack_8cc_source.html#l00130">spoofing-attack.cc:130</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="classTcpReceiver_a7af928b938a88ebbf3d5ac3f0fca0fca_cgraph.svg" width="100%" height="300"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+</div>
+
+</div>
+</div>
+<a id="a23c2d88af57f33ce31db6d0c6d126ad3" name="a23c2d88af57f33ce31db6d0c6d126ad3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a23c2d88af57f33ce31db6d0c6d126ad3">&#9670;&#160;</a></span>StopApplication()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void TcpReceiver::StopApplication </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Called when the application stops. Closes the socket. </p>
+
+<p class="definition">Definition at line <a class="el" href="spoofing-attack_8cc_source.html#l00145">145</a> of file <a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  145</span>                                  {</div>
+<div class="line"><span class="lineno">  146</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="classTcpReceiver.html#a49ecc11e49c68e849982869d911287cf">socket</a>) <a class="code hl_variable" href="classTcpReceiver.html#a49ecc11e49c68e849982869d911287cf">socket</a>-&gt;Close();</div>
+<div class="line"><span class="lineno">  147</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a241dbcee7d8cf80fea6ad0daff803daa" name="a241dbcee7d8cf80fea6ad0daff803daa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a241dbcee7d8cf80fea6ad0daff803daa">&#9670;&#160;</a></span>local</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Address TcpReceiver::local</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Address to listen on. </p>
+
+<p class="definition">Definition at line <a class="el" href="spoofing-attack_8cc_source.html#l00115">115</a> of file <a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a>.</p>
+
+</div>
+</div>
+<a id="a49ecc11e49c68e849982869d911287cf" name="a49ecc11e49c68e849982869d911287cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ecc11e49c68e849982869d911287cf">&#9670;&#160;</a></span>socket</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Ptr&lt;Socket&gt; TcpReceiver::socket</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>TCP server socket. </p>
+
+<p class="definition">Definition at line <a class="el" href="spoofing-attack_8cc_source.html#l00114">114</a> of file <a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following file:<ul>
+<li>examples/spoofing/<a class="el" href="spoofing-attack_8cc_source.html">spoofing-attack.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->

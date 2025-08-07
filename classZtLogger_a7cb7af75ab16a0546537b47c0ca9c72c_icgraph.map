@@ -1,0 +1,15 @@
+<map id="ZtLogger::LogCertValidationResult" name="ZtLogger::LogCertValidationResult">
+<area shape="rect" id="Node000001" title="Logs the result of certificate validation." alt="" coords="804,23,1007,63"/>
+<area shape="rect" id="Node000002" href="$classSecureSinkApp.html#a3a672bd05d4399036c2f7fe92c205962" title="Handle incoming packets, validate certificate, and decrypt authorized data." alt="" coords="549,5,756,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="790,34,756,31,757,26,791,29"/>
+<area shape="rect" id="Node000005" href="$classSecureSink.html#a5987bbdb44f0b13e034968f6f836a61e" title=" " alt="" coords="562,55,743,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="790,57,744,61,743,56,790,52"/>
+<area shape="rect" id="Node000003" href="$classSecureSinkApp.html#a5ee6aadf29ff1a4560e160520bba0030" title=" " alt="" coords="284,5,501,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="536,21,501,21,501,15,536,15"/>
+<area shape="rect" id="Node000004" href="$classSecureSinkApp.html#ac45868eb53a9a2e9d12e46f355731811" title=" " alt="" coords="5,5,236,31"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
+<area shape="rect" id="Node000006" href="$classSecureSink.html#a5e00071e0d8327c46c34d2ffdbc386bc" title=" " alt="" coords="297,55,489,80"/>
+<area shape="poly" id="edge5_Node000005_Node000006" title=" " alt="" coords="548,70,489,70,489,65,548,65"/>
+<area shape="rect" id="Node000007" href="$classSecureSink.html#ad09b7203b04b80cb3a8c89eb9174fbd2" title=" " alt="" coords="17,55,224,80"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="283,70,224,70,224,65,283,65"/>
+</map>

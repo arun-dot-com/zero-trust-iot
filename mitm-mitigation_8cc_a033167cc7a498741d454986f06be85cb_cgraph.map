@@ -1,0 +1,20 @@
+<map id="SendFromSensor" name="SendFromSensor">
+<area shape="rect" id="Node000001" title="Simulates a sensor device sending an encrypted payload to the gateway after policy and handshake vali..." alt="" coords="5,156,136,181"/>
+<area shape="rect" id="Node000002" href="$namespacens3.html#a15964bad59df770e70c1efa2be78b7fb" title="Encrypts a plaintext string using AES&#45;CBC mode with a randomly generated IV." alt="" coords="205,5,358,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,154,117,99,147,67,183,40,195,33,197,38,185,44,151,71,121,102,82,158"/>
+<area shape="rect" id="Node000003" href="$namespacens3.html#af9b3b1642d0cadbd7ff0948f32fb14a3" title="Decodes a hex&#45;encoded AES key string into a raw key byte block." alt="" coords="205,55,357,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="88,154,131,126,183,97,221,82,223,87,185,102,133,130,91,158"/>
+<area shape="rect" id="Node000004" href="$classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d" title="Logs a general message with a specified tag." alt="" coords="427,181,537,207"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="118,153,171,142,237,134,308,132,379,141,418,154,451,172,449,176,415,159,378,146,308,137,238,139,172,148,119,159"/>
+<area shape="rect" id="Node000005" href="$classZtLogger.html#a467e70148db6fc7fb134e1fa7496ca35" title="Logs a certificate issuance event." alt="" coords="191,156,371,181"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="136,166,178,166,178,171,136,171"/>
+<area shape="rect" id="Node000006" href="$classZtLogger.html#a1875b16f51cbdf5e27ef37ff3bf6b4f1" title="Logs a rejected certificate attempt with a reason." alt="" coords="184,205,379,231"/>
+<area shape="poly" id="edge6_Node000001_Node000006" title=" " alt="" coords="126,179,214,200,213,205,125,184"/>
+<area shape="rect" id="Node000007" href="$classZtLogger.html#ac3f4de629944eec6b0befaf1fcbdce7d" title="Logs an encryption event with payload and IV." alt="" coords="191,255,371,280"/>
+<area shape="poly" id="edge8_Node000001_Node000007" title=" " alt="" coords="89,179,131,209,185,240,207,248,206,253,183,244,128,214,86,184"/>
+<area shape="rect" id="Node000008" href="$classCertificateAuthority.html#af81edd447afd694376bb5e66d45bdd48" title="Signs an identity certificate with node ID, role, and expiry." alt="" coords="207,305,356,345"/>
+<area shape="poly" id="edge10_Node000001_Node000008" title=" " alt="" coords="82,180,123,232,152,263,186,289,198,296,195,301,182,294,149,267,119,236,78,183"/>
+<area shape="poly" id="edge5_Node000005_Node000004" title=" " alt="" coords="372,177,413,183,413,188,371,183"/>
+<area shape="poly" id="edge7_Node000006_Node000004" title=" " alt="" coords="378,204,412,200,413,205,379,209"/>
+<area shape="poly" id="edge9_Node000007_Node000004" title=" " alt="" coords="337,252,378,240,443,211,446,215,380,244,339,257"/>
+</map>

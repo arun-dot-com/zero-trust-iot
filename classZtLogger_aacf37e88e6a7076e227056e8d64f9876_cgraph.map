@@ -1,0 +1,5 @@
+<map id="ZtLogger::LogDecryptionFailure" name="ZtLogger::LogDecryptionFailure">
+<area shape="rect" id="Node000001" title="Logs a decryption failure event." alt="" coords="5,5,231,31"/>
+<area shape="rect" id="Node000002" href="$classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d" title="Logs a general message with a specified tag." alt="" coords="279,5,389,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="231,15,265,15,265,21,231,21"/>
+</map>

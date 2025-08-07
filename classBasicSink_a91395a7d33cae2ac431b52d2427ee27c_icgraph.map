@@ -1,0 +1,5 @@
+<map id="BasicSink::HandleAccept" name="BasicSink::HandleAccept">
+<area shape="rect" id="Node000001" title="Handles incoming connections." alt="" coords="251,5,433,31"/>
+<area shape="rect" id="Node000002" href="$classBasicSink.html#ab0e1e160e166351342628a3ed4cb5a7b" title="Called at application start." alt="" coords="5,5,203,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="237,21,203,21,203,15,237,15"/>
+</map>

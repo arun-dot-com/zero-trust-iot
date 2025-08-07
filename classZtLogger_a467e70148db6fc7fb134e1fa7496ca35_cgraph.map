@@ -1,0 +1,5 @@
+<map id="ZtLogger::LogCertIssued" name="ZtLogger::LogCertIssued">
+<area shape="rect" id="Node000001" title="Logs a certificate issuance event." alt="" coords="5,5,185,31"/>
+<area shape="rect" id="Node000002" href="$classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d" title="Logs a general message with a specified tag." alt="" coords="233,5,344,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="186,15,220,15,220,21,186,21"/>
+</map>

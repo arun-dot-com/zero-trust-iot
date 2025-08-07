@@ -1,0 +1,18 @@
+<map id="SecureSensorApp::StartApplication" name="SecureSensorApp::StartApplication">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,80,252,105"/>
+<area shape="rect" id="Node000002" href="$classZtLogger.html#a467e70148db6fc7fb134e1fa7496ca35" title="Logs a certificate issuance event." alt="" coords="330,5,510,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="179,77,356,31,357,37,180,82"/>
+<area shape="rect" id="Node000004" href="$classSecureSensorApp.html#abcf992d1e14b78f97e8755ee1cd7537a" title="Encrypt and send sensor data using session key." alt="" coords="300,80,540,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="252,90,286,90,286,95,252,95"/>
+<area shape="rect" id="Node000008" href="$classCertificateAuthority.html#af81edd447afd694376bb5e66d45bdd48" title="Signs an identity certificate with node ID, role, and expiry." alt="" coords="345,130,495,170"/>
+<area shape="poly" id="edge8_Node000001_Node000008" title=" " alt="" coords="195,103,332,130,331,135,194,108"/>
+<area shape="rect" id="Node000003" href="$classZtLogger.html#ab4743f29e35568cb7e4652d3b012061d" title="Logs a general message with a specified tag." alt="" coords="816,67,927,92"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="510,8,634,9,702,15,769,27,806,41,839,57,837,62,804,45,767,33,701,20,634,14,510,14"/>
+<area shape="rect" id="Node000005" href="$namespacens3.html#a15964bad59df770e70c1efa2be78b7fb" title="Encrypts a plaintext string using AES&#45;CBC mode with a randomly generated IV." alt="" coords="601,43,755,68"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="508,77,588,66,588,71,509,83"/>
+<area shape="rect" id="Node000006" href="$namespacens3.html#aa5c1b03e21921c7c1fabc7602f96b230" title="Converts a hexadecimal string into a byte vector." alt="" coords="613,92,743,117"/>
+<area shape="poly" id="edge5_Node000004_Node000006" title=" " alt="" coords="540,96,599,98,599,104,540,101"/>
+<area shape="rect" id="Node000007" href="$classZtLogger.html#ac3f4de629944eec6b0befaf1fcbdce7d" title="Logs an encryption event with payload and IV." alt="" coords="588,141,768,167"/>
+<area shape="poly" id="edge6_Node000004_Node000007" title=" " alt="" coords="484,103,541,115,618,135,617,140,539,121,483,108"/>
+<area shape="poly" id="edge7_Node000007_Node000003" title=" " alt="" coords="733,139,767,128,834,96,837,101,769,132,734,144"/>
+</map>

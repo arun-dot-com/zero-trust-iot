@@ -1,0 +1,5 @@
+<map id="BasicSink::HandleAccept" name="BasicSink::HandleAccept">
+<area shape="rect" id="Node000001" title="Handles incoming connections." alt="" coords="5,5,188,31"/>
+<area shape="rect" id="Node000002" href="$classBasicSink.html#a41daf4933081c676241a1d15b2920235" title="Reads data from connected clients and logs the content." alt="" coords="236,5,408,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="189,15,222,15,222,21,189,21"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="ns3::HexDecodeKey" name="ns3::HexDecodeKey">
+<area shape="rect" id="Node000001" title="Decodes a hex&#45;encoded AES key string into a raw key byte block." alt="" coords="303,31,455,56"/>
+<area shape="rect" id="Node000002" href="$mitm-mitigation_8cc.html#a6898e3febd567849e1a7310597beb21f" title="Receives an encrypted packet at the gateway and performs decryption and validation." alt="" coords="108,5,255,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="289,35,255,30,255,25,290,29"/>
+<area shape="rect" id="Node000004" href="$mitm-mitigation_8cc.html#a033167cc7a498741d454986f06be85cb" title="Simulates a sensor device sending an encrypted payload to the gateway after policy and handshake vali..." alt="" coords="116,55,247,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="289,57,247,62,246,57,289,52"/>
+<area shape="rect" id="Node000003" href="$mitm-mitigation_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the simulation. Sets up network topology, installs security components,..." alt="" coords="5,31,60,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="95,35,61,41,60,36,94,30"/>
+<area shape="poly" id="edge4_Node000004_Node000003" title=" " alt="" coords="102,57,60,50,61,45,103,52"/>
+</map>

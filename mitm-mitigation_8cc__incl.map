@@ -1,0 +1,23 @@
+<map id="examples/mitm/mitm&#45;mitigation.cc" name="examples/mitm/mitm&#45;mitigation.cc">
+<area shape="rect" id="Node000001" title="NS&#45;3 simulation demonstrating Zero Trust principles using secure communication and policy enforcement..." alt="" coords="831,5,995,45"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,101,148,126"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="831,33,534,53,348,71,161,96,137,100,136,95,160,91,348,66,534,48,830,28"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="173,101,341,126"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="831,37,614,61,353,96,325,101,324,95,352,91,614,55,830,32"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="365,101,532,126"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="831,44,545,96,520,101,519,95,544,91,830,39"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="557,93,695,133"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="851,48,703,92,701,87,849,43"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="719,101,914,126"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="893,48,842,93,839,89,890,44"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="939,101,1081,126"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="936,44,988,89,985,93,933,48"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="1105,101,1272,126"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="974,43,1140,94,1138,99,972,48"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="1296,101,1476,126"/>
+<area shape="poly" id="edge8_Node000001_Node000009" title=" " alt="" coords="995,39,1285,91,1311,95,1310,101,1284,96,994,44"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="1500,101,1619,126"/>
+<area shape="poly" id="edge9_Node000001_Node000010" title=" " alt="" coords="995,30,1219,51,1354,69,1489,91,1508,95,1506,100,1488,96,1353,74,1218,56,995,35"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="1643,101,1812,126"/>
+<area shape="poly" id="edge10_Node000001_Node000011" title=" " alt="" coords="995,29,1277,51,1454,68,1632,91,1661,95,1660,101,1631,96,1454,74,1277,56,995,34"/>
+</map>
