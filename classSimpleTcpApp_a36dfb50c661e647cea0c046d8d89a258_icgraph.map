@@ -1,0 +1,5 @@
+<map id="SimpleTcpApp::Send" name="SimpleTcpApp::Send">
+<area shape="rect" id="Node000001" title="Sends the message to the peer via TCP." alt="" coords="279,5,432,31"/>
+<area shape="rect" id="Node000002" href="$classSimpleTcpApp.html#abb8bb48508627c3983ccccf158f75db6" title="Called when the application starts. Connects the socket and schedules Send()." alt="" coords="5,5,231,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="265,21,231,21,231,15,265,15"/>
+</map>

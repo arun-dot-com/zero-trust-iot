@@ -1,0 +1,7 @@
+<map id="BasicSink::StartApplication" name="BasicSink::StartApplication">
+<area shape="rect" id="Node000001" title="Called at application start." alt="" coords="5,5,203,31"/>
+<area shape="rect" id="Node000002" href="$classBasicSink.html#a91395a7d33cae2ac431b52d2427ee27c" title="Handles incoming connections." alt="" coords="251,5,433,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="203,15,237,15,237,21,203,21"/>
+<area shape="rect" id="Node000003" href="$classBasicSink.html#a41daf4933081c676241a1d15b2920235" title="Reads data from connected clients and logs the content." alt="" coords="481,5,653,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="434,15,468,15,468,21,434,21"/>
+</map>

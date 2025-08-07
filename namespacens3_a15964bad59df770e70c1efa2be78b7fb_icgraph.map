@@ -1,0 +1,11 @@
+<map id="ns3::EncryptPayload" name="ns3::EncryptPayload">
+<area shape="rect" id="Node000001" title="Encrypts a plaintext string using AES&#45;CBC mode with a randomly generated IV." alt="" coords="588,31,741,56"/>
+<area shape="rect" id="Node000002" href="$classSecureSensorApp.html#abcf992d1e14b78f97e8755ee1cd7537a" title="Encrypt and send sensor data using session key." alt="" coords="300,5,540,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="574,37,540,33,541,28,574,31"/>
+<area shape="rect" id="Node000004" href="$mitm-mitigation_8cc.html#a033167cc7a498741d454986f06be85cb" title="Simulates a sensor device sending an encrypted payload to the gateway after policy and handshake vali..." alt="" coords="355,55,485,80"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="574,55,486,64,485,58,574,50"/>
+<area shape="rect" id="Node000003" href="$classSecureSensorApp.html#a05e3604df4cc65de733f672b33e33ee5" title=" " alt="" coords="5,5,252,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="286,21,252,21,252,15,286,15"/>
+<area shape="rect" id="Node000005" href="$mitm-mitigation_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the simulation. Sets up network topology, installs security components,..." alt="" coords="101,55,156,80"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="341,70,156,70,156,65,341,65"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="main" name="main">
+<area shape="rect" id="Node000001" title="Main function to set up the NS&#45;3 simulation." alt="" coords="5,55,60,80"/>
+<area shape="rect" id="Node000002" href="$mitm-attack_8cc.html#a2d3153c36501901f35611c7faac2c56e" title="MITM node intercepts and modifies packets before forwarding them to the gateway." alt="" coords="108,5,293,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="59,55,107,39,134,32,136,37,109,45,61,60"/>
+<area shape="rect" id="Node000003" href="$mitm-attack_8cc.html#a6898e3febd567849e1a7310597beb21f" title="Receives packets at the gateway node." alt="" coords="127,55,274,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="60,65,114,65,114,70,60,70"/>
+<area shape="rect" id="Node000004" href="$mitm-attack_8cc.html#ae80caccc8855688279c1a87987a9c267" title="Sends a UDP message from the sensor node to the MITM node." alt="" coords="135,104,266,129"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="61,74,109,89,140,98,138,103,107,94,59,79"/>
+</map>

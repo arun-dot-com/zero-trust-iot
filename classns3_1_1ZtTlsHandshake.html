@@ -1,0 +1,657 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<!-- BEGIN opengraph metadata -->
+<meta property="og:title" content="Doxygen Awesome" />
+<meta property="og:image" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta property="og:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<meta property="og:url" content="https://jothepro.github.io/doxygen-awesome-css/" />
+<!-- END opengraph metadata -->
+<!-- BEGIN twitter metadata -->
+<meta name="twitter:image:src" content="https://repository-images.githubusercontent.com/348492097/4f16df80-88fb-11eb-9d31-4015ff22c452" />
+<meta name="twitter:title" content="Doxygen Awesome" />
+<meta name="twitter:description" content="Custom CSS theme for doxygen html-documentation with lots of customization parameters." />
+<!-- END twitter metadata -->
+<title>Zero Trust IoT library: ns3::ZtTlsHandshake Class Reference</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<link rel="icon" type="image/svg+xml" href="logo.drawio.svg"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<script type="text/javascript" src="doxygen-awesome-darkmode-toggle.js"></script>
+<script type="text/javascript" src="doxygen-awesome-fragment-copy-button.js"></script>
+<script type="text/javascript" src="doxygen-awesome-paragraph-link.js"></script>
+<script type="text/javascript" src="doxygen-awesome-interactive-toc.js"></script>
+<script type="text/javascript" src="doxygen-awesome-tabs.js"></script>
+<script type="text/javascript" src="toggle-alternative-theme.js"></script>
+<script type="text/javascript">
+    DoxygenAwesomeFragmentCopyButton.init()
+    DoxygenAwesomeDarkModeToggle.init()
+    DoxygenAwesomeParagraphLink.init()
+    DoxygenAwesomeInteractiveToc.init()
+    DoxygenAwesomeTabs.init()
+</script>
+<link href="navtree.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="resize.js"></script>
+<script type="text/javascript" src="navtreedata.js"></script>
+<script type="text/javascript" src="navtree.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+<link href="doxygen-awesome.css" rel="stylesheet" type="text/css"/>
+<link href="doxygen-awesome-sidebar-only.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<!-- https://tholman.com/github-corners/ -->
+<a href="https://github.com/the-ns3-programmer/zero-trust-iot" class="github-corner" title="View source on GitHub" target="_blank" rel="noopener noreferrer">
+    <svg viewBox="0 0 250 250" width="40" height="40" style="position: absolute; top: 0; border: 0; right: 0; z-index: 99;" aria-hidden="true">
+    <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"></path><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"></path></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectlogo"><img alt="Logo" src="zero-trust-iot.png"/></td>
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Zero Trust IoT library
+   </div>
+<div style="position: fixed; top: 1rem; right: 4rem; z-index: 1000; background-color: #eee; padding: 0.5rem; border-radius: 5px; cursor: pointer;">
+  <doxygen-awesome-dark-mode-toggle title="Toggle Light/Dark Mode" id="theme-toggle"></doxygen-awesome-dark-mode-toggle>
+</div>
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    // Force re-render of the component after load
+    const toggle = document.getElementById('theme-toggle');
+    if (toggle) {
+      // Trigger internal update by toggling the mode briefly
+      setTimeout(() => {
+        toggle.dispatchEvent(new Event('click'));
+        toggle.dispatchEvent(new Event('click'));
+      }, 10);
+    }
+  });
+</script>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generated by Doxygen 1.9.8 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search/",'.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Search');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<div id="side-nav" class="ui-resizable side-nav-resizable">
+  <div id="nav-tree">
+    <div id="nav-tree-contents">
+      <div id="nav-sync" class="sync"></div>
+    </div>
+  </div>
+  <div id="splitbar" style="-moz-user-select:none;" 
+       class="ui-resizable-handle">
+  </div>
+</div>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(document).ready(function(){initNavTree('classns3_1_1ZtTlsHandshake.html',''); initResizable(); });
+/* @license-end */
+</script>
+<div id="doc-content">
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<div id="MSearchResults">
+<div class="SRPage">
+<div id="SRIndex">
+<div id="SRResults"></div>
+<div class="SRStatus" id="Loading">Loading...</div>
+<div class="SRStatus" id="Searching">Searching...</div>
+<div class="SRStatus" id="NoMatches">No Matches</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="header">
+  <div class="summary">
+<a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
+<a href="#pri-attribs">Private Attributes</a>  </div>
+  <div class="headertitle"><div class="title">ns3::ZtTlsHandshake Class Reference</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Simulates a Zero Trust-based TLS handshake mechanism between NS-3 nodes.  
+ <a href="classns3_1_1ZtTlsHandshake.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="zt-tls-handshake_8h_source.html">zt-tls-handshake.h</a>&gt;</code></p>
+<div class="dynheader">
+Inheritance diagram for ns3::ZtTlsHandshake:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classns3_1_1ZtTlsHandshake__inherit__graph.svg" width="168" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<div class="dynheader">
+Collaboration diagram for ns3::ZtTlsHandshake:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classns3_1_1ZtTlsHandshake__coll__graph.svg" width="168" height="370"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
+Public Member Functions</h2></td></tr>
+<tr class="memitem:a67f81c49c0842b1faebe7ad20913896e" id="r_a67f81c49c0842b1faebe7ad20913896e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#a67f81c49c0842b1faebe7ad20913896e">ZtTlsHandshake</a> ()</td></tr>
+<tr class="memdesc:a67f81c49c0842b1faebe7ad20913896e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <br /></td></tr>
+<tr class="separator:a67f81c49c0842b1faebe7ad20913896e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a29042c5c4785e838b79645942545f92f" id="r_a29042c5c4785e838b79645942545f92f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#a29042c5c4785e838b79645942545f92f">StartHandshake</a> (Ptr&lt; Node &gt; client, Ptr&lt; Node &gt; server, uint32_t clientId, uint32_t serverId)</td></tr>
+<tr class="memdesc:a29042c5c4785e838b79645942545f92f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start a simulated TLS handshake between client and server nodes.  <br /></td></tr>
+<tr class="separator:a29042c5c4785e838b79645942545f92f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1e698d5081470b3aa241b1c1c59440f" id="r_ad1e698d5081470b3aa241b1c1c59440f"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#ad1e698d5081470b3aa241b1c1c59440f">HasSession</a> (uint32_t peerId) const</td></tr>
+<tr class="memdesc:ad1e698d5081470b3aa241b1c1c59440f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if a session exists for a given peer.  <br /></td></tr>
+<tr class="separator:ad1e698d5081470b3aa241b1c1c59440f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aabc886b5e40d5cd11a85100f9a92b6be" id="r_aabc886b5e40d5cd11a85100f9a92b6be"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#aabc886b5e40d5cd11a85100f9a92b6be">GetSessionKey</a> (uint32_t peerId) const</td></tr>
+<tr class="memdesc:aabc886b5e40d5cd11a85100f9a92b6be"><td class="mdescLeft">&#160;</td><td class="mdescRight">Retrieve the session key for a peer in hexadecimal string format.  <br /></td></tr>
+<tr class="separator:aabc886b5e40d5cd11a85100f9a92b6be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5dfe3328be71d6a33a17c0eefc9b49f1" id="r_a5dfe3328be71d6a33a17c0eefc9b49f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#a5dfe3328be71d6a33a17c0eefc9b49f1">SetExternalLogger</a> (std::function&lt; void(std::string)&gt; logger)</td></tr>
+<tr class="memdesc:a5dfe3328be71d6a33a17c0eefc9b49f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set an external logger for emitting TLS logs.  <br /></td></tr>
+<tr class="separator:a5dfe3328be71d6a33a17c0eefc9b49f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:add609547dbe02334086d633b46d4e06c" id="r_add609547dbe02334086d633b46d4e06c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#add609547dbe02334086d633b46d4e06c">SetPolicyValidator</a> (std::function&lt; bool(uint32_t, std::string)&gt; validator)</td></tr>
+<tr class="memdesc:add609547dbe02334086d633b46d4e06c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set a policy validator for enforcing Zero Trust identity checks.  <br /></td></tr>
+<tr class="separator:add609547dbe02334086d633b46d4e06c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-static-methods" name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a8dc1ccb96fbe1a00a70378194b1701d5" id="r_a8dc1ccb96fbe1a00a70378194b1701d5"><td class="memItemLeft" align="right" valign="top">static TypeId&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#a8dc1ccb96fbe1a00a70378194b1701d5">GetTypeId</a> ()</td></tr>
+<tr class="memdesc:a8dc1ccb96fbe1a00a70378194b1701d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the NS-3 TypeId.  <br /></td></tr>
+<tr class="separator:a8dc1ccb96fbe1a00a70378194b1701d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:adbdfe90fefa640daea258641efe0e945" id="r_adbdfe90fefa640daea258641efe0e945"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#adbdfe90fefa640daea258641efe0e945">Log</a> (const std::string &amp;msg) const</td></tr>
+<tr class="memdesc:adbdfe90fefa640daea258641efe0e945"><td class="mdescLeft">&#160;</td><td class="mdescRight">Emit a log message using the external logger or NS_LOG fallback.  <br /></td></tr>
+<tr class="separator:adbdfe90fefa640daea258641efe0e945"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
+Private Attributes</h2></td></tr>
+<tr class="memitem:ab6d6e50e909f65baae9a50f6164bdaaa" id="r_ab6d6e50e909f65baae9a50f6164bdaaa"><td class="memItemLeft" align="right" valign="top">std::map&lt; uint32_t, std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#ab6d6e50e909f65baae9a50f6164bdaaa">m_sessionKeys</a></td></tr>
+<tr class="memdesc:ab6d6e50e909f65baae9a50f6164bdaaa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Maps node IDs to session keys.  <br /></td></tr>
+<tr class="separator:ab6d6e50e909f65baae9a50f6164bdaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7816d7d5794490047c8bf581f0b390ff" id="r_a7816d7d5794490047c8bf581f0b390ff"><td class="memItemLeft" align="right" valign="top">std::function&lt; void(std::string)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#a7816d7d5794490047c8bf581f0b390ff">m_logger</a></td></tr>
+<tr class="memdesc:a7816d7d5794490047c8bf581f0b390ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional external logger.  <br /></td></tr>
+<tr class="separator:a7816d7d5794490047c8bf581f0b390ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acaf9716eaf521974ca50939619ff54da" id="r_acaf9716eaf521974ca50939619ff54da"><td class="memItemLeft" align="right" valign="top">std::function&lt; bool(uint32_t, std::string)&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classns3_1_1ZtTlsHandshake.html#acaf9716eaf521974ca50939619ff54da">m_policyValidator</a></td></tr>
+<tr class="memdesc:acaf9716eaf521974ca50939619ff54da"><td class="mdescLeft">&#160;</td><td class="mdescRight">Optional external policy validator.  <br /></td></tr>
+<tr class="separator:acaf9716eaf521974ca50939619ff54da"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Simulates a Zero Trust-based TLS handshake mechanism between NS-3 nodes. </p>
+<p>This class is responsible for performing identity-validated TLS-like handshakes between IoT nodes, establishing symmetric session keys, and enforcing policy-based authentication using injected policy validation logic. </p>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8h_source.html#l00023">23</a> of file <a class="el" href="zt-tls-handshake_8h_source.html">zt-tls-handshake.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a67f81c49c0842b1faebe7ad20913896e" name="a67f81c49c0842b1faebe7ad20913896e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a67f81c49c0842b1faebe7ad20913896e">&#9670;&#160;</a></span>ZtTlsHandshake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">ns3::ZtTlsHandshake::ZtTlsHandshake </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8cc_source.html#l00030">30</a> of file <a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   30</span>                               {</div>
+<div class="line"><span class="lineno">   31</span>  NS_LOG_FUNCTION(<span class="keyword">this</span>);</div>
+<div class="line"><span class="lineno">   32</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aabc886b5e40d5cd11a85100f9a92b6be" name="aabc886b5e40d5cd11a85100f9a92b6be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aabc886b5e40d5cd11a85100f9a92b6be">&#9670;&#160;</a></span>GetSessionKey()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string ns3::ZtTlsHandshake::GetSessionKey </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>peerId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Retrieve the session key for a peer in hexadecimal string format. </p>
+<p>Retrieve session key for a given peer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peerId</td><td>Node ID of the peer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Hex-encoded session key if it exists, empty string otherwise.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peerId</td><td>Node ID of the peer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Hex-encoded session key, or empty string if not found </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8cc_source.html#l00086">86</a> of file <a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   86</span>                                                             {</div>
+<div class="line"><span class="lineno">   87</span>  <span class="keyword">auto</span> it = <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#ab6d6e50e909f65baae9a50f6164bdaaa">m_sessionKeys</a>.find(peerId);</div>
+<div class="line"><span class="lineno">   88</span>  <span class="keywordflow">return</span> (it != <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#ab6d6e50e909f65baae9a50f6164bdaaa">m_sessionKeys</a>.end()) ? it-&gt;second : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   89</span>}</div>
+<div class="ttc" id="aclassns3_1_1ZtTlsHandshake_html_ab6d6e50e909f65baae9a50f6164bdaaa"><div class="ttname"><a href="classns3_1_1ZtTlsHandshake.html#ab6d6e50e909f65baae9a50f6164bdaaa">ns3::ZtTlsHandshake::m_sessionKeys</a></div><div class="ttdeci">std::map&lt; uint32_t, std::string &gt; m_sessionKeys</div><div class="ttdoc">Maps node IDs to session keys.</div><div class="ttdef"><b>Definition</b> <a href="zt-tls-handshake_8h_source.html#l00082">zt-tls-handshake.h:82</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a8dc1ccb96fbe1a00a70378194b1701d5" name="a8dc1ccb96fbe1a00a70378194b1701d5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8dc1ccb96fbe1a00a70378194b1701d5">&#9670;&#160;</a></span>GetTypeId()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">TypeId ns3::ZtTlsHandshake::GetTypeId </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the NS-3 TypeId. </p>
+<p>Get the ns-3 TypeId for <a class="el" href="classns3_1_1ZtTlsHandshake.html" title="Simulates a Zero Trust-based TLS handshake mechanism between NS-3 nodes.">ZtTlsHandshake</a>.</p>
+<dl class="section return"><dt>Returns</dt><dd>TypeId of the <a class="el" href="classns3_1_1ZtTlsHandshake.html" title="Simulates a Zero Trust-based TLS handshake mechanism between NS-3 nodes.">ZtTlsHandshake</a> class.</dd>
+<dd>
+The TypeId </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8cc_source.html#l00019">19</a> of file <a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                 {</div>
+<div class="line"><span class="lineno">   20</span>  <span class="keyword">static</span> TypeId tid = TypeId(<span class="stringliteral">&quot;ns3::ZtTlsHandshake&quot;</span>)</div>
+<div class="line"><span class="lineno">   21</span>    .SetParent&lt;Object&gt;()</div>
+<div class="line"><span class="lineno">   22</span>    .SetGroupName(<span class="stringliteral">&quot;ZeroTrust&quot;</span>)</div>
+<div class="line"><span class="lineno">   23</span>    .AddConstructor&lt;<a class="code hl_function" href="classns3_1_1ZtTlsHandshake.html#a67f81c49c0842b1faebe7ad20913896e">ZtTlsHandshake</a>&gt;();</div>
+<div class="line"><span class="lineno">   24</span>  <span class="keywordflow">return</span> tid;</div>
+<div class="line"><span class="lineno">   25</span>}</div>
+<div class="ttc" id="aclassns3_1_1ZtTlsHandshake_html_a67f81c49c0842b1faebe7ad20913896e"><div class="ttname"><a href="classns3_1_1ZtTlsHandshake.html#a67f81c49c0842b1faebe7ad20913896e">ns3::ZtTlsHandshake::ZtTlsHandshake</a></div><div class="ttdeci">ZtTlsHandshake()</div><div class="ttdoc">Constructor.</div><div class="ttdef"><b>Definition</b> <a href="zt-tls-handshake_8cc_source.html#l00030">zt-tls-handshake.cc:30</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="ad1e698d5081470b3aa241b1c1c59440f" name="ad1e698d5081470b3aa241b1c1c59440f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1e698d5081470b3aa241b1c1c59440f">&#9670;&#160;</a></span>HasSession()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool ns3::ZtTlsHandshake::HasSession </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>peerId</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Check if a session exists for a given peer. </p>
+<p>Check if a session key exists for a peer.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peerId</td><td>Node ID of the peer. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true if a session exists, false otherwise.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">peerId</td><td>Node ID of the peer </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if session exists, otherwise false </dd></dl>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8cc_source.html#l00076">76</a> of file <a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                     {</div>
+<div class="line"><span class="lineno">   77</span>  <span class="keywordflow">return</span> <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#ab6d6e50e909f65baae9a50f6164bdaaa">m_sessionKeys</a>.find(peerId) != <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#ab6d6e50e909f65baae9a50f6164bdaaa">m_sessionKeys</a>.end();</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="adbdfe90fefa640daea258641efe0e945" name="adbdfe90fefa640daea258641efe0e945"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbdfe90fefa640daea258641efe0e945">&#9670;&#160;</a></span>Log()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ns3::ZtTlsHandshake::Log </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>msg</em></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Emit a log message using the external logger or NS_LOG fallback. </p>
+<p>Internal logging wrapper.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">msg</td><td>The message to log.</td></tr>
+    <tr><td class="paramname">msg</td><td>Log message </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8cc_source.html#l00114">114</a> of file <a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  114</span>                                                   {</div>
+<div class="line"><span class="lineno">  115</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#a7816d7d5794490047c8bf581f0b390ff">m_logger</a>) {</div>
+<div class="line"><span class="lineno">  116</span>    <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#a7816d7d5794490047c8bf581f0b390ff">m_logger</a>(msg);</div>
+<div class="line"><span class="lineno">  117</span>  } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">  118</span>    NS_LOG_INFO(msg);</div>
+<div class="line"><span class="lineno">  119</span>  }</div>
+<div class="line"><span class="lineno">  120</span>}</div>
+<div class="ttc" id="aclassns3_1_1ZtTlsHandshake_html_a7816d7d5794490047c8bf581f0b390ff"><div class="ttname"><a href="classns3_1_1ZtTlsHandshake.html#a7816d7d5794490047c8bf581f0b390ff">ns3::ZtTlsHandshake::m_logger</a></div><div class="ttdeci">std::function&lt; void(std::string)&gt; m_logger</div><div class="ttdoc">Optional external logger.</div><div class="ttdef"><b>Definition</b> <a href="zt-tls-handshake_8h_source.html#l00083">zt-tls-handshake.h:83</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classns3_1_1ZtTlsHandshake_adbdfe90fefa640daea258641efe0e945_icgraph.svg" width="407" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<a id="a5dfe3328be71d6a33a17c0eefc9b49f1" name="a5dfe3328be71d6a33a17c0eefc9b49f1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5dfe3328be71d6a33a17c0eefc9b49f1">&#9670;&#160;</a></span>SetExternalLogger()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ns3::ZtTlsHandshake::SetExternalLogger </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; void(std::string)&gt;&#160;</td>
+          <td class="paramname"><em>logger</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set an external logger for emitting TLS logs. </p>
+<p>Set external logging function.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">logger</td><td>Function accepting a string message.</td></tr>
+    <tr><td class="paramname">logger</td><td>Function to be used for logging </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8cc_source.html#l00096">96</a> of file <a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   96</span>                                                                          {</div>
+<div class="line"><span class="lineno">   97</span>  <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#a7816d7d5794490047c8bf581f0b390ff">m_logger</a> = logger;</div>
+<div class="line"><span class="lineno">   98</span>}</div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="add609547dbe02334086d633b46d4e06c" name="add609547dbe02334086d633b46d4e06c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#add609547dbe02334086d633b46d4e06c">&#9670;&#160;</a></span>SetPolicyValidator()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ns3::ZtTlsHandshake::SetPolicyValidator </td>
+          <td>(</td>
+          <td class="paramtype">std::function&lt; bool(uint32_t, std::string)&gt;&#160;</td>
+          <td class="paramname"><em>validator</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set a policy validator for enforcing Zero Trust identity checks. </p>
+<p>Set policy validation function for authorization.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">validator</td><td>Function taking node ID and role string, returns true if authorized.</td></tr>
+    <tr><td class="paramname">validator</td><td>Function that validates (nodeId, role) </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8cc_source.html#l00105">105</a> of file <a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  105</span>                                                                                        {</div>
+<div class="line"><span class="lineno">  106</span>  <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#acaf9716eaf521974ca50939619ff54da">m_policyValidator</a> = validator;</div>
+<div class="line"><span class="lineno">  107</span>}</div>
+<div class="ttc" id="aclassns3_1_1ZtTlsHandshake_html_acaf9716eaf521974ca50939619ff54da"><div class="ttname"><a href="classns3_1_1ZtTlsHandshake.html#acaf9716eaf521974ca50939619ff54da">ns3::ZtTlsHandshake::m_policyValidator</a></div><div class="ttdeci">std::function&lt; bool(uint32_t, std::string)&gt; m_policyValidator</div><div class="ttdoc">Optional external policy validator.</div><div class="ttdef"><b>Definition</b> <a href="zt-tls-handshake_8h_source.html#l00084">zt-tls-handshake.h:84</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a id="a29042c5c4785e838b79645942545f92f" name="a29042c5c4785e838b79645942545f92f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a29042c5c4785e838b79645942545f92f">&#9670;&#160;</a></span>StartHandshake()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void ns3::ZtTlsHandshake::StartHandshake </td>
+          <td>(</td>
+          <td class="paramtype">Ptr&lt; Node &gt;&#160;</td>
+          <td class="paramname"><em>client</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Ptr&lt; Node &gt;&#160;</td>
+          <td class="paramname"><em>server</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>clientId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>serverId</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Start a simulated TLS handshake between client and server nodes. </p>
+<p>Start a simulated handshake between client and server.</p>
+<p>Performs mutual policy validation and generates a symmetric session key shared by both nodes.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">client</td><td>Pointer to the client node. </td></tr>
+    <tr><td class="paramname">server</td><td>Pointer to the server node. </td></tr>
+    <tr><td class="paramname">clientId</td><td>Unique identifier for the client node. </td></tr>
+    <tr><td class="paramname">serverId</td><td>Unique identifier for the server node.</td></tr>
+    <tr><td class="paramname">client</td><td>Pointer to the client Node </td></tr>
+    <tr><td class="paramname">server</td><td>Pointer to the server Node </td></tr>
+    <tr><td class="paramname">clientId</td><td>ID of the client node </td></tr>
+    <tr><td class="paramname">serverId</td><td>ID of the server node </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8cc_source.html#l00042">42</a> of file <a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>                                                                                                            {</div>
+<div class="line"><span class="lineno">   43</span>  NS_LOG_FUNCTION(<span class="keyword">this</span> &lt;&lt; client &lt;&lt; server);</div>
+<div class="line"><span class="lineno">   44</span> </div>
+<div class="line"><span class="lineno">   45</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#acaf9716eaf521974ca50939619ff54da">m_policyValidator</a> &amp;&amp; !<a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#acaf9716eaf521974ca50939619ff54da">m_policyValidator</a>(clientId, <span class="stringliteral">&quot;client&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   46</span>    <a class="code hl_function" href="classns3_1_1ZtTlsHandshake.html#adbdfe90fefa640daea258641efe0e945">Log</a>(<span class="stringliteral">&quot;[ZT-HANDSHAKE] Client not authorized by policy&quot;</span>);</div>
+<div class="line"><span class="lineno">   47</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   48</span>  }</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>  <span class="keywordflow">if</span> (<a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#acaf9716eaf521974ca50939619ff54da">m_policyValidator</a> &amp;&amp; !<a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#acaf9716eaf521974ca50939619ff54da">m_policyValidator</a>(serverId, <span class="stringliteral">&quot;server&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   51</span>    <a class="code hl_function" href="classns3_1_1ZtTlsHandshake.html#adbdfe90fefa640daea258641efe0e945">Log</a>(<span class="stringliteral">&quot;[ZT-HANDSHAKE] Server not authorized by policy&quot;</span>);</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   53</span>  }</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>  CryptoPP::AutoSeededRandomPool prng;</div>
+<div class="line"><span class="lineno">   56</span>  CryptoPP::byte key[CryptoPP::AES::DEFAULT_KEYLENGTH];</div>
+<div class="line"><span class="lineno">   57</span>  prng.GenerateBlock(key, <span class="keyword">sizeof</span>(key));</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>  std::string encoded;</div>
+<div class="line"><span class="lineno">   60</span>  CryptoPP::StringSource ss(key, <span class="keyword">sizeof</span>(key), <span class="keyword">true</span>,</div>
+<div class="line"><span class="lineno">   61</span>    <span class="keyword">new</span> CryptoPP::HexEncoder(<span class="keyword">new</span> CryptoPP::StringSink(encoded)));</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>  <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#ab6d6e50e909f65baae9a50f6164bdaaa">m_sessionKeys</a>[serverId] = encoded;</div>
+<div class="line"><span class="lineno">   64</span>  <a class="code hl_variable" href="classns3_1_1ZtTlsHandshake.html#ab6d6e50e909f65baae9a50f6164bdaaa">m_sessionKeys</a>[clientId] = encoded;</div>
+<div class="line"><span class="lineno">   65</span> </div>
+<div class="line"><span class="lineno">   66</span>  <a class="code hl_function" href="classns3_1_1ZtTlsHandshake.html#adbdfe90fefa640daea258641efe0e945">Log</a>(<span class="stringliteral">&quot;[ZT-HANDSHAKE] Session established between Client &quot;</span> + std::to_string(clientId) +</div>
+<div class="line"><span class="lineno">   67</span>      <span class="stringliteral">&quot; and Server &quot;</span> + std::to_string(serverId) + <span class="stringliteral">&quot; | Key: &quot;</span> + encoded);</div>
+<div class="line"><span class="lineno">   68</span>}</div>
+<div class="ttc" id="aclassns3_1_1ZtTlsHandshake_html_adbdfe90fefa640daea258641efe0e945"><div class="ttname"><a href="classns3_1_1ZtTlsHandshake.html#adbdfe90fefa640daea258641efe0e945">ns3::ZtTlsHandshake::Log</a></div><div class="ttdeci">void Log(const std::string &amp;msg) const</div><div class="ttdoc">Emit a log message using the external logger or NS_LOG fallback.</div><div class="ttdef"><b>Definition</b> <a href="zt-tls-handshake_8cc_source.html#l00114">zt-tls-handshake.cc:114</a></div></div>
+</div><!-- fragment --><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classns3_1_1ZtTlsHandshake_a29042c5c4785e838b79645942545f92f_cgraph.svg" width="407" height="51"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
+
+</div>
+</div>
+<h2 class="groupheader">Field Documentation</h2>
+<a id="a7816d7d5794490047c8bf581f0b390ff" name="a7816d7d5794490047c8bf581f0b390ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7816d7d5794490047c8bf581f0b390ff">&#9670;&#160;</a></span>m_logger</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;void(std::string)&gt; ns3::ZtTlsHandshake::m_logger</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Optional external logger. </p>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8h_source.html#l00083">83</a> of file <a class="el" href="zt-tls-handshake_8h_source.html">zt-tls-handshake.h</a>.</p>
+
+</div>
+</div>
+<a id="acaf9716eaf521974ca50939619ff54da" name="acaf9716eaf521974ca50939619ff54da"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acaf9716eaf521974ca50939619ff54da">&#9670;&#160;</a></span>m_policyValidator</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::function&lt;bool(uint32_t, std::string)&gt; ns3::ZtTlsHandshake::m_policyValidator</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Optional external policy validator. </p>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8h_source.html#l00084">84</a> of file <a class="el" href="zt-tls-handshake_8h_source.html">zt-tls-handshake.h</a>.</p>
+
+</div>
+</div>
+<a id="ab6d6e50e909f65baae9a50f6164bdaaa" name="ab6d6e50e909f65baae9a50f6164bdaaa"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6d6e50e909f65baae9a50f6164bdaaa">&#9670;&#160;</a></span>m_sessionKeys</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::map&lt;uint32_t, std::string&gt; ns3::ZtTlsHandshake::m_sessionKeys</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Maps node IDs to session keys. </p>
+
+<p class="definition">Definition at line <a class="el" href="zt-tls-handshake_8h_source.html#l00082">82</a> of file <a class="el" href="zt-tls-handshake_8h_source.html">zt-tls-handshake.h</a>.</p>
+
+</div>
+</div>
+<hr/>The documentation for this class was generated from the following files:<ul>
+<li>model/<a class="el" href="zt-tls-handshake_8h_source.html">zt-tls-handshake.h</a></li>
+<li>model/<a class="el" href="zt-tls-handshake_8cc_source.html">zt-tls-handshake.cc</a></li>
+</ul>
+</div><!-- contents -->
+</div><!-- doc-content -->

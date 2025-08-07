@@ -1,0 +1,7 @@
+<map id="ZtLogger::LogCertRejected" name="ZtLogger::LogCertRejected">
+<area shape="rect" id="Node000001" title="Logs a rejected certificate attempt with a reason." alt="" coords="287,5,481,31"/>
+<area shape="rect" id="Node000002" href="$mitm-mitigation_8cc.html#a033167cc7a498741d454986f06be85cb" title="Simulates a sensor device sending an encrypted payload to the gateway after policy and handshake vali..." alt="" coords="108,5,239,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="273,21,239,21,239,15,273,15"/>
+<area shape="rect" id="Node000003" href="$mitm-mitigation_8cc.html#a0ddf1224851353fc92bfbff6f499fa97" title="Main entry point for the simulation. Sets up network topology, installs security components,..." alt="" coords="5,5,60,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="94,21,60,21,60,15,94,15"/>
+</map>

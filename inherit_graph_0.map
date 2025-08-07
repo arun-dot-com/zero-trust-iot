@@ -1,0 +1,17 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" title=" " alt="" coords="5,153,100,179"/>
+<area shape="rect" id="Node000001" href="$classAttackerApp.html" title="Simulates an unauthorized device attempting to inject malicious payload." alt="" coords="165,5,266,31"/>
+<area shape="poly" id="edge1_Node000000_Node000001" title=" " alt="" coords="65,140,98,90,120,63,146,40,167,28,170,33,150,44,124,67,102,93,69,143"/>
+<area shape="rect" id="Node000002" href="$classBasicSink.html" title="A simple TCP server that logs incoming messages." alt="" coords="173,55,258,80"/>
+<area shape="poly" id="edge2_Node000000_Node000002" title=" " alt="" coords="76,141,108,115,147,89,171,78,174,82,149,94,112,119,79,146"/>
+<area shape="rect" id="Node000003" href="$classSecureSensorApp.html" title="Secure TCP&#45;based sensor application that sends encrypted data after Zero Trust handshake and certific..." alt="" coords="148,104,283,129"/>
+<area shape="poly" id="edge3_Node000000_Node000003" title=" " alt="" coords="108,147,172,127,173,132,109,152"/>
+<area shape="rect" id="Node000004" href="$classSecureSink.html" title="A secure receiver that verifies certificates and decrypts data if authorized." alt="" coords="168,153,263,179"/>
+<area shape="poly" id="edge4_Node000000_Node000004" title=" " alt="" coords="114,163,168,163,168,169,114,169"/>
+<area shape="rect" id="Node000005" href="$classSecureSinkApp.html" title="Secure receiver (gateway) that authorizes senders and decrypts valid messages." alt="" coords="156,203,275,228"/>
+<area shape="poly" id="edge5_Node000000_Node000005" title=" " alt="" coords="109,180,173,200,172,205,108,185"/>
+<area shape="rect" id="Node000006" href="$classSimpleTcpApp.html" title="Simple untrusted TCP application used by attacker to send garbage payloads." alt="" coords="159,252,272,277"/>
+<area shape="poly" id="edge6_Node000000_Node000006" title=" " alt="" coords="80,186,112,212,149,237,176,250,174,254,147,242,109,216,76,190"/>
+<area shape="rect" id="Node000007" href="$classTcpReceiver.html" title="A simple TCP server application that receives and logs incoming messages." alt="" coords="165,301,265,327"/>
+<area shape="poly" id="edge7_Node000000_Node000007" title=" " alt="" coords="69,189,102,238,124,264,150,286,172,299,169,304,146,291,121,268,98,241,65,192"/>
+</map>

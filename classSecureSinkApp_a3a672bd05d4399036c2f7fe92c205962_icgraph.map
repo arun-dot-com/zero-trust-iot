@@ -1,0 +1,7 @@
+<map id="SecureSinkApp::HandleRead" name="SecureSinkApp::HandleRead">
+<area shape="rect" id="Node000001" title="Handle incoming packets, validate certificate, and decrypt authorized data." alt="" coords="549,5,756,31"/>
+<area shape="rect" id="Node000002" href="$classSecureSinkApp.html#a5ee6aadf29ff1a4560e160520bba0030" title=" " alt="" coords="284,5,501,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="536,21,501,21,501,15,536,15"/>
+<area shape="rect" id="Node000003" href="$classSecureSinkApp.html#ac45868eb53a9a2e9d12e46f355731811" title=" " alt="" coords="5,5,236,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="270,21,236,21,236,15,270,15"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="AttackerApp" name="AttackerApp">
+<area shape="rect" id="Node000001" title="Simulates an unauthorized device attempting to inject malicious payload." alt="" coords="5,119,148,284"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="33,5,120,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="79,84,79,118,74,118,74,84"/>
+</map>
