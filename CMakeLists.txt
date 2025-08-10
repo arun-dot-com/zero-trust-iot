@@ -1,3 +1,6 @@
+find_library(CRYPTOPP_LIB cryptopp REQUIRED)
+
+
 set(source_files
     model/zt-certificate.cc
     model/zt-encryption-utils.cc
@@ -18,6 +21,5 @@ build_lib(
   LIBNAME zero-trust-iot
   SOURCE_FILES ${source_files}
   HEADER_FILES ${header_files}
-  LIBRARIES_TO_LINK ${libcore} ${libnetwork} ${libinternet} ${libwifi}
+  LIBRARIES_TO_LINK ${libcore} ${libnetwork} ${libinternet} ${libwifi}  PUBLIC ${CRYPTOPP_LIB}
 )
-
